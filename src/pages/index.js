@@ -2,12 +2,9 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import AboutSec from "../components/aboutSec";
 import Artilces from "../components/articles";
-import Footer from "../components/footer";
-import MainHeader from "../components/header";
 import HomeProjects from "../components/homeProjects";
 import HomeSlider from "../components/homeSlider";
 import BunaSubsid from "../components/subsid";
-// import ServiceSec from "../components/serviceSec";
 
 export const getServerSideProps = async () => {
   const res = await fetch("https://api.npoint.io/43ef0cc6777fcf05fa7f");
@@ -32,15 +29,12 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <MainHeader />
         <HomeSlider data={Banner} />
         <AboutSec data={AboutSection} />
         <HomeProjects />
         <BunaSubsid/>
-        {/* <ServiceSec data={ServicesSection} /> */}
         <Artilces />
 
-        <Footer />
       </main>
     </>
   );
