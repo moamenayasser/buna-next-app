@@ -1,0 +1,183 @@
+{
+  "headerLinks": [
+    {
+      "id": 1,
+      "label_en": "about us",
+      "label_ar": "معلومات عنا",
+      "href": "/about",
+      "hasDropdown": false,
+      "dropdownLinks": []
+    },
+    {
+      "id": 2,
+      "label_en": "subsidiaries",
+      "label_ar": "الشركات التابعة",
+      "href": "",
+      "hasDropdown": true,
+      "dropdownLinks": [
+        {
+          "id": 1,
+          "label_en": "ALIGN",
+          "label_ar": "ALIGN",
+          "href": "/",
+          "hasDropdown": false,
+          "dropdownLinks": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label_en": "projects",
+      "label_ar": "المشروعات",
+      "href": "/projects",
+      "hasDropdown": false,
+      "dropdownLinks": []
+    },
+    {
+      "id": 4,
+      "label_en": "Certificates",
+      "label_ar": "الشهادات",
+      "href": "/certificates",
+      "hasDropdown": false,
+      "dropdownLinks": []
+    },
+    {
+      "id": 5,
+      "label_en": "contact us",
+      "label_ar": "تواصل معنا",
+      "href": "/contact",
+      "hasDropdown": false,
+      "dropdownLinks": []
+    }
+  ],
+  "footerLinks": [
+    {
+      "id": 1,
+      "title_en": "TAAM Links",
+      "title_ar": "روابط تام",
+      "links": [
+        {
+          "id": 1,
+          "title_en": "About us",
+          "title_ar": "معلومات عنا",
+          "href": "/about"
+        },
+        {
+          "id": 2,
+          "title_en": "Projects",
+          "title_ar": "مشاريعنا",
+          "href": "/projects"
+        },
+        {
+          "id": 3,
+          "title_en": "contact us",
+          "title_ar": "تواصل معنا",
+          "href": "/contact"
+        },
+        {
+          "id": 4,
+          "title_en": "News",
+          "title_ar": "الاخبار",
+          "href": "/news"
+        },
+        {
+          "id": 6,
+          "title_en": "ISO Certificates",
+          "title_ar": "شهاداتنا",
+          "href": "/certificates"
+        },
+        {
+          "id": 7,
+          "title_en": "Our Clients",
+          "title_ar": "العملاء",
+          "href": "/clients"
+        },
+        {
+          "id": 8,
+          "title_en": "Blogs",
+          "title_ar": "المدونه",
+          "href": "/blogs"
+        },
+        {
+          "id": 9,
+          "title_en": "Testimonials",
+          "title_ar": "رأي العملاء",
+          "href": "/testimonials"
+        },
+        {
+          "id": 10,
+          "title_en": "Careers",
+          "title_ar": "الوظائف",
+          "href": "/careers"
+        },
+        {
+          "id": 11,
+          "title_en": "FAQs",
+          "title_ar": "الاسئلة المتكررة",
+          "href": "/faq"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_en": "TAAM Specialties",
+      "title_ar": " متخصصون فى",
+      "links": [
+        {
+          "id": 1,
+          "title_en": "Commercial Projects",
+          "title_ar": "معلومات عنا",
+          "href": "/"
+        },
+        {
+          "id": 2,
+          "title_en": "Housing & Residential",
+          "title_ar": "خدمانتا",
+          "href": "/"
+        },
+        {
+          "id": 3,
+          "title_en": "Industrial & Logistics Facilities",
+          "title_ar": "مشاريعنا",
+          "href": "/"
+        },
+        {
+          "id": 4,
+          "title_en": "Hospitality Projects",
+          "title_ar": "تواصل معنا",
+          "href": "/"
+        },
+        {
+          "id": 5,
+          "title_en": "Healthcare Projects",
+          "title_ar": "تواصل معنا",
+          "href": "/"
+        },
+        {
+          "id": 6,
+          "title_en": "Educational Facilities",
+          "title_ar": "تواصل معنا",
+          "href": "/"
+        },
+        {
+          "id": 7,
+          "title_en": "Governmental Projects",
+          "title_ar": "تواصل معنا",
+          "href": "/"
+        }
+      ]
+    }
+  ],
+  "socialIcons": [
+    {
+      "id": 1,
+      "label": "Twitter",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "label": "LinkedIn",
+      "href": "#"
+    }
+  ]
+}

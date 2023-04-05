@@ -7,6 +7,5 @@ export default function App({ Component, pageProps }) {
     <Theme locale={locale}>
       <Component {...pageProps} />;
     </Theme>
-
   )
 }
