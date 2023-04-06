@@ -14,8 +14,8 @@ import NewsLetterSection from "./NewsLetterSection";
 
 const FooterWrapperStyle = styled("footer")(({ theme }) => ({
   background: '#000',
-  paddingTop: 90,
-  paddingBottom: theme.spacing(5),
+  paddingTop: theme.spacing(3),
+  paddingBottom: theme.spacing(3),
   position: "relative",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",

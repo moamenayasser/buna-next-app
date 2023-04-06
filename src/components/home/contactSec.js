@@ -96,7 +96,7 @@ const subsidImg = [
 const ContactSec = () => {
 
   return (
-    <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative">
+    <Box mt={10} pt={10} pb={10} bgcolor="#F5F5F5" position="relative">
       <Container>
         <InnerTitle title="Contact Us" align="center" color="primary" />
         <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
