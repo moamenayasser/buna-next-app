@@ -24,7 +24,7 @@ const DynamicCopyRight = dynamic(() =>
 
 const Layout = (props) => {
   const { headerLinks, footerLinks, socialIcons, locale, children } = props;
-console.log(locale)
+
   return (
     <Stack minHeight="100vh" width="100%" justifyContent="space-between">
       <SlideInHeader cloneProps={cloneProps}>
@@ -44,7 +44,7 @@ console.log(locale)
       />
       <DynamicCopyRight />
     </Stack>
-  );
-};
+  )
+}
 
 export default Layout;

@@ -93,44 +93,24 @@ const subsidImg = [
   },
 ];
 
-const BunaSubsidiary = () => {
+const ContactSec = () => {
 
   return (
     <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative">
       <Container>
-        <InnerTitle title="BUNA SUBSIDIARIES" align="center" color="primary" />
+        <InnerTitle title="Contact Us" align="center" color="primary" />
         <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
           {subsidImg?.map((item) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={item.id}>
               <Link href="/">
-                <CardBox>
-                  <div className="card-img" style={{ marginTop: '15px', marginBottom: '20px' }}>
-                    <Image
-                      src={item.img}
-                      alt={item.name}
-                      width={150}
-                      height={150}
-                      style={{
-                        objectFit: "contain",
-                        width: "100%",
-                        height: "100%",
-                        margi: 'auto'
-                      }}
-                    />
-                  </div>
-
-                  <div className="card-content">
-                    <Typography component="h3" variant="h4" color="primary" mb={2}>{item.name}</Typography>
-                    <Typography component="p" variant="p" mb={2}>{item.desc}</Typography>
-                  </div>
-                </CardBox>
+                
               </Link>
             </Grid>
           ))}
         </Grid>
       </Container>
-      <SideTitle title="Subsidiary" />
+      <SideTitle title="Contact" />
     </Box>
   );
 };
-export default BunaSubsidiary;
+export default ContactSec;

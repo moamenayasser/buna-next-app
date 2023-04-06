@@ -18,11 +18,9 @@ import GlobalBtn from "../GlobalBtn";
 
 const ProjectSec = ({ locale }) => {
     const options = {
-        slidesPerView: 3,
-        spaceBetween: 30,
         breakpoints: {
             640: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 20,
             },
             768: {
@@ -49,7 +47,8 @@ const ProjectSec = ({ locale }) => {
     return (
         <Box pt={10} pb={10} className="project-setion" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right' }}>
             <Container>
-                <InnerTitle title="Featured Projects" subtitle="Projects" />
+                <InnerTitle title="Featured Projects" align="left" />
+
                 <Swiper className="newSwiper" style={{ marginBottom: '30px' }} {...options}>
                     <SwiperSlide>
                         <ProjectItem />

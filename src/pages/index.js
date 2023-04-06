@@ -3,17 +3,18 @@ import Head from "next/head";
 // Components
 import Layout from "@/components/layout/Layout";
 import AboutSec from "@/components/home/aboutSec";
-import Artilces from "@/components/home/articles";
-import HomeProjects from "@/components/home/homeProjects";
 import HomeSlider from "@/components/home/homeSlider";
 import BunaSubsidiary from "@/components/home/bunaSubsidiary";
 import ProjectSec from "@/components/home/projectSec";
+import ClientsSec from "@/components/home/clientsSec";
+import CertificateSec from "@/components/home/certificateSec";
 // Data
 import globalData from "@/utils/data.json";
+import ContactSec from "@/components/home/contactSec";
 
 
 const Home = ({ data , locale}) => {
-  const { resources, home: { Banner, AboutSection, ServicesSection } } = data;
+  const { resources, home: { Banner, AboutSection } } = data;
   const { headerLinks, footerLinks, socialIcons } = globalData;
 
   return (
@@ -29,13 +30,15 @@ const Home = ({ data , locale}) => {
         <main>
           <HomeSlider data={Banner} />
           <AboutSec data={AboutSection} />
-          {/* <HomeProjects /> */}
           <BunaSubsidiary />
           <ProjectSec locale={locale} />
+          <CertificateSec />
+          <ContactSec />
+          <ClientsSec locale={locale} />
         </main>
       </Layout>
     </>
-  );
+  )
 }
 export default Home;
 

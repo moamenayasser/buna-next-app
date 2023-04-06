@@ -5,7 +5,7 @@ export default function App({ Component, pageProps }) {
   const locale = pageProps.locale || "en";
   return (
     <Theme locale={locale}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </Theme>
   )
 }

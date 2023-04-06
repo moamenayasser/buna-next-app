@@ -92,29 +92,31 @@ const global = responsiveFontSizes(createTheme({
                     },
                 },
                 outlined: {
-                    color: "#fff",
-                    backgroundColor: "#a91a2d",
-                    border: "2px solid #a91a2d",
-                    boxShadow: "unset",
-
-                    "&:hover": {
-                        color: "#000",
-                        backgroundColor: "#fff",
-                        border: "2px solid #fff",
-                        boxShadow: "unset",
-                    },
-                },
-                secondOutlined: {
                     color: "#000",
                     backgroundColor: "#fff",
+                    boxShadow: "unset",
                     border: "2px solid #fff",
-                    boxShadow: "none",
+
+                    "&:after": {
+                        width: 0,
+                        height: '100%',
+                        top: 0,
+                        left: 0,
+                        background: '#000',
+                        content: '""',
+                        display: 'block',
+                        position: 'absolute',
+                        transition: 'all 0.3s',
+                    },
 
                     "&:hover": {
-                        color: "#fff",
-                        backgroundColor: "#a91a2d",
-                        border: "2px solid #a91a2d",
-                        boxShadow: "none",
+                        color: '#fff !important',
+                        boxShadow: "unset",
+                        border: "2px solid #fff",
+
+                        "&:after": {
+                            width: '100%',
+                        }
                     },
                 },
             },

@@ -22,6 +22,30 @@
           "href": "/",
           "hasDropdown": false,
           "dropdownLinks": []
+        },
+        {
+          "id": 2,
+          "label_en": "BCT",
+          "label_ar": "BCT",
+          "href": "/",
+          "hasDropdown": false,
+          "dropdownLinks": []
+        },
+        {
+          "id": 3,
+          "label_en": "TAAM",
+          "label_ar": "TAAM",
+          "href": "/",
+          "hasDropdown": false,
+          "dropdownLinks": []
+        },
+        {
+          "id": 4,
+          "label_en": "DAC Group",
+          "label_ar": "DAC Group",
+          "href": "/",
+          "hasDropdown": false,
+          "dropdownLinks": []
         }
       ]
     },
@@ -30,8 +54,33 @@
       "label_en": "projects",
       "label_ar": "المشروعات",
       "href": "/projects",
-      "hasDropdown": false,
-      "dropdownLinks": []
+      "hasDropdown": true,
+      "dropdownLinks": [
+        {
+          "id": 1,
+          "label_en": "SUMOU TOWER",
+          "label_ar": "SUMOU TOWER",
+          "href": "/",
+          "hasDropdown": false,
+          "dropdownLinks": []
+        },
+        {
+          "id": 2,
+          "label_en": "SUMOU GATE",
+          "label_ar": "SUMOU GATE",
+          "href": "/",
+          "hasDropdown": false,
+          "dropdownLinks": []
+        },
+        {
+          "id": 3,
+          "label_en": "SUMOU PARK",
+          "label_ar": "SUMOU PARK",
+          "href": "/",
+          "hasDropdown": false,
+          "dropdownLinks": []
+        }
+      ]
     },
     {
       "id": 4,
@@ -53,7 +102,7 @@
   "footerLinks": [
     {
       "id": 1,
-      "title_en": "TAAM Links",
+      "title_en": "Buna Links",
       "title_ar": "روابط تام",
       "links": [
         {
@@ -64,105 +113,63 @@
         },
         {
           "id": 2,
-          "title_en": "Projects",
-          "title_ar": "مشاريعنا",
+          "title_en": "Subsidiaries",
+          "title_ar": "شركاؤنا",
           "href": "/projects"
         },
         {
           "id": 3,
-          "title_en": "contact us",
-          "title_ar": "تواصل معنا",
-          "href": "/contact"
-        },
-        {
-          "id": 4,
           "title_en": "News",
           "title_ar": "الاخبار",
           "href": "/news"
         },
         {
-          "id": 6,
+          "id": 4,
+          "title_en": "FAQs",
+          "title_ar": "الاسئلة المتكررة",
+          "href": "/faq"
+        },
+        {
+          "id": 5,
           "title_en": "ISO Certificates",
           "title_ar": "شهاداتنا",
           "href": "/certificates"
         },
         {
-          "id": 7,
+          "id": 6,
           "title_en": "Our Clients",
           "title_ar": "العملاء",
           "href": "/clients"
         },
         {
-          "id": 8,
-          "title_en": "Blogs",
-          "title_ar": "المدونه",
-          "href": "/blogs"
-        },
-        {
-          "id": 9,
-          "title_en": "Testimonials",
-          "title_ar": "رأي العملاء",
-          "href": "/testimonials"
-        },
-        {
-          "id": 10,
+          "id": 7,
           "title_en": "Careers",
           "title_ar": "الوظائف",
           "href": "/careers"
-        },
-        {
-          "id": 11,
-          "title_en": "FAQs",
-          "title_ar": "الاسئلة المتكررة",
-          "href": "/faq"
         }
       ]
     },
     {
       "id": 2,
-      "title_en": "TAAM Specialties",
-      "title_ar": " متخصصون فى",
+      "title_en": "Projects",
+      "title_ar": "المشاريع",
       "links": [
         {
           "id": 1,
-          "title_en": "Commercial Projects",
-          "title_ar": "معلومات عنا",
+          "title_en": "Sumou Tower",
+          "title_ar": "برج سومو",
           "href": "/"
         },
         {
           "id": 2,
-          "title_en": "Housing & Residential",
-          "title_ar": "خدمانتا",
+          "title_en": "Sumou Gate",
+          "title_ar": "سور سومو",
           "href": "/"
         },
         {
           "id": 3,
-          "title_en": "Industrial & Logistics Facilities",
-          "title_ar": "مشاريعنا",
-          "href": "/"
-        },
-        {
-          "id": 4,
-          "title_en": "Hospitality Projects",
-          "title_ar": "تواصل معنا",
-          "href": "/"
-        },
-        {
-          "id": 5,
-          "title_en": "Healthcare Projects",
-          "title_ar": "تواصل معنا",
-          "href": "/"
-        },
-        {
-          "id": 6,
-          "title_en": "Educational Facilities",
-          "title_ar": "تواصل معنا",
-          "href": "/"
-        },
-        {
-          "id": 7,
-          "title_en": "Governmental Projects",
-          "title_ar": "تواصل معنا",
+          "title_en": "Sumou Park",
+          "title_ar": "حدائق سومو",
           "href": "/"
         }
       ]

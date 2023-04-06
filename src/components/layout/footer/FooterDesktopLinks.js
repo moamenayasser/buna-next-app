@@ -12,7 +12,7 @@ const LinksWrapperStyle = styled("ul")({
   display: "flex",
   flexDirection: "column",
   flexWrap: "wrap",
-  maxHeight: 200,
+  maxHeight: 130,
   "& a": {
     fontSize: "0.8rem",
     textTransform: "capitalize",
@@ -78,7 +78,7 @@ const FooterDesktopLinks = (props) => {
         </LinksWrapperStyle>
       </Collapse>
     </Box >
-  );
-};
+  )
+}
 
 export default FooterDesktopLinks;

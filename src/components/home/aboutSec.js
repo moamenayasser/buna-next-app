@@ -63,7 +63,7 @@ const AboutSec = () => {
       <Container>
         <Grid container spacing={3} display='flex' alignItems="center">
           <Grid item xs={12} md={6}>
-            <InnerTitle title="Who we are" subtitle="About Us"/>
+            <InnerTitle title="Who we are" align="left" />
             <p>
               BUNA is a Leading General Contractor & Construction Management
               Services Organization in Saudi Arabia & a subsidiary of SUMOU

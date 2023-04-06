@@ -33,7 +33,7 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       content: '""',
       left: '50%',
       width: '2px',
-      bottom: '0%',
+      bottom: '-5px',
       height: '0%',
       backgroundColor: theme.palette.secondary.main,
       transition: 'all 0.5s ease-out',
@@ -45,10 +45,10 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
     },
     "&:hover": {
       backgroundColor: "unset",
-      color: theme.palette.secondary.main,
+      // color: theme.palette.secondary.main,
 
       "&:after": {
-        height: "30%",
+        height: "40%",
       },
     },
   },
@@ -71,7 +71,7 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       content: '""',
       left: '50%',
       width: '2px',
-      bottom: '0%',
+      bottom: '-5px',
       height: '0%',
       backgroundColor: theme.palette.secondary.main,
       transition: 'all 0.5s ease-out',
@@ -79,13 +79,15 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
 
     "&:hover": {
       backgroundColor: "unset",
-      color: theme.palette.secondary.main,
+      // color: theme.palette.secondary.main,
+      "&:after": {
+        height: "40%",
+      },
     },
   },
   "& .dropdown-menu": {
     position: "absolute",
     boxShadow: theme.shadows[1],
-    borderRadius: theme.shape.borderRadius,
     borderRadius: 0,
     minWidth: 160,
     maxWidth: 250,
@@ -93,6 +95,8 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
     backgroundColor: theme.palette.common.white,
     color: theme.palette.common.black,
     opacity: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
     visibility: "hidden",
     transform: "translateY(10px)",
     transition: "0.25s ease-in-out",

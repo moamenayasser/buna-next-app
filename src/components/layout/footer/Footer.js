@@ -10,17 +10,18 @@ import Box from "@mui/material/Box";
 import LogoSection from "./LogoSection";
 import FooterDesktopLinks from "./FooterDesktopLinks";
 import NewsLetterSection from "./NewsLetterSection";
-// Images
-import ContactImg from "/public/images/contact-pattern.webp";
+
 
 const FooterWrapperStyle = styled("footer")(({ theme }) => ({
-  paddingTop: theme.spacing(5),
+  background: '#000',
+  paddingTop: 90,
   paddingBottom: theme.spacing(5),
   position: "relative",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: theme.palette.common.white,
 }));
+
 
 const Footer = (props) => {
   const { socialIcons, footerLinks, locale } = props;
@@ -46,7 +47,7 @@ const Footer = (props) => {
     }
   };
   return (
-    <FooterWrapperStyle style={{ background: `url('${ContactImg.src}') #000` }}>
+    <FooterWrapperStyle>
       <Container>
         <Grid container spacing={2} position="relative">
           <Grid item xs={12} md={4} lg={3}>
@@ -74,7 +75,7 @@ const Footer = (props) => {
         </Grid>
       </Container>
     </FooterWrapperStyle>
-  );
-};
+  )
+}
 
 export default Footer;
