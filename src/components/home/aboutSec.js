@@ -19,7 +19,7 @@ const ImageContainer = styled(Box)(({ theme }) => ({
     "&:after": {
       position: 'absolute',
       content: '""',
-      border: '1px solid #10584d',
+      border: '3px solid #10584d',
       height: '100%',
       width: '100%',
       left: '30px',

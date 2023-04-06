@@ -11,11 +11,11 @@ const InnerTitle = ({ title, align , color}) => {
                 position: 'absolute',
                 display: 'block',
                 width: "50px",
-                height: '4px',
+                height: '3px',
                 backgroundColor: '#10584d',
                 top: "-6px",
                 transform: 'translateY(-50%)',
-                left: `${align} === 'left' ? 50% : 0`
+                left: `{${align} === 'left' ? 0 : '50%'}`
             }
         }}>
             <Typography component="h1" variant="h2" color={color} pt={1} pb={3}>{title} </Typography>
