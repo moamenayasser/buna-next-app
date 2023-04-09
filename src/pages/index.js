@@ -33,7 +33,7 @@ const Home = ({ data , locale}) => {
           <BunaSubsidiary />
           <ProjectSec locale={locale} />
           <CertificateSec />
-          <ContactSec />
+          <ContactSec locale={locale} />
           <ClientsSec locale={locale} />
         </main>
       </Layout>

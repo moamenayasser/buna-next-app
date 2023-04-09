@@ -1,3 +1,6 @@
+// Internal Imports
+import Image from "next/image";
+import Link from "next/link";
 // MUI
 import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -5,10 +8,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-// Internal Imports
-import Image from "next/image";
-import Link from "next/link";
-import InnerTitle from "../InnerTitle";
+// Component
 import { SideTitle } from "../SideTitle";
 
 const CardBox = styled(Box)(({ theme }) => ({
@@ -39,6 +39,7 @@ const CardBox = styled(Box)(({ theme }) => ({
 
   "&:hover": {
     animation: 'jump1 5s linear infinite',
+    backgroundColor: '#fff',
 
     "&:before , &:after": {
       width: '100%',
@@ -146,7 +147,7 @@ const BunaSubsidiary = () => {
           ))}
         </Grid>
       </Container>
-      <SideTitle title="Subsidiary" />
+      <SideTitle title="Buna" />
     </Box>
   );
 };
