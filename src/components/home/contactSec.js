@@ -109,7 +109,7 @@ const ContactBox = styled(Box)(({ theme }) => ({
 }));
 
 
-const ContactSec = ({locale}) => {
+const ContactSec = ({ locale }) => {
   return (
     <ContactBox mt={10} pt={10} pb={10} bgcolor="#F5F5F5" position="relative" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom left' }}>
       <Container>
@@ -174,9 +174,11 @@ const ContactSec = ({locale}) => {
                     </div>
                     <div className="card-content">
                       <Typography component="h3" variant="h4" color="primary" mb={2}>Phone number</Typography>
-                      <Typography component="p" variant="p" mb={2}>
-                        <Link href="tel:+966126586686">+966 12 658 6686</Link>
-                      </Typography>
+                      {/* <Link href="tel:+966126586686">
+                        <Typography component="p" variant="p" mb={2}>
+                          +966 12 658 6686
+                        </Typography>
+                      </Link> */}
                     </div>
                   </Box>
                 </Link>
@@ -190,9 +192,11 @@ const ContactSec = ({locale}) => {
                     </div>
                     <div className="card-content">
                       <Typography component="h3" variant="h4" color="primary" mb={2}>Email</Typography>
-                      <Typography component="p" variant="p" mb={2}>
-                        <Link href="mailto:info@buna.sa">info@buna.sa</Link>
-                      </Typography>
+                      {/* <Link href="mailto:info@buna.sa">
+                        <Typography component="p" variant="p" mb={2}>
+                          info@buna.sa
+                        </Typography>
+                      </Link> */}
                     </div>
                   </Box>
                 </Link>
@@ -206,9 +210,11 @@ const ContactSec = ({locale}) => {
                     </div>
                     <div className="card-content">
                       <Typography component="h3" variant="h4" color="primary" mb={2}>Fax</Typography>
-                      <Typography component="p" variant="p" mb={2}>
-                        <Link href="tel:+966126586687">+966 12 658 6687</Link>
-                      </Typography>
+                      {/* <Link href="tel:+966126586687">
+                        <Typography component="p" variant="p" mb={2}>
+                          +966 12 658 6687
+                        </Typography>
+                      </Link> */}
                     </div>
                   </Box>
                 </Link>
@@ -218,7 +224,7 @@ const ContactSec = ({locale}) => {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Box className="form-container" paddingLeft={{ xs: 0, md: 5}}>
+            <Box className="form-container" paddingLeft={{ xs: 0, md: 5 }}>
               <div className="form-border">
                 <ContactForm />
               </div>
