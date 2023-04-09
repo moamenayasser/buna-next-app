@@ -1,12 +1,9 @@
-// Internal Imports
-import NextLink from "next/link";
 // MUI
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import Divider from "@mui/material/Divider";
 
 const CopyRight = () => {
   return (
@@ -14,8 +11,8 @@ const CopyRight = () => {
       <Container>
         <Stack
           direction={{ md: "row" }}
-          textAlign={{ xs: "center", md: "auto" }}
-          justifyContent={{ xs: "center", md: "space-between" }}
+          textAlign="center"
+          justifyContent="center"
           gap={1}
         >
           <Typography fontSize="0.65rem">
@@ -29,43 +26,6 @@ const CopyRight = () => {
               rel="noopener"
             >
               PSdigital
-            </Link>
-          </Typography>
-          <Typography
-            fontSize="0.65rem"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            component="div"
-          >
-            <Link
-              href="/"
-              component={NextLink}
-              color="inherit"
-              underline="none"
-              textTransform="capitalize"
-            >
-              terms & conditions
-            </Link>
-
-            <Divider
-              orientation="vertical"
-              flexItem
-              style={{
-                marginLeft: "0.75rem",
-                marginRight: "0.75rem",
-                borderColor: "#fff",
-              }}
-            />
-
-            <Link
-              href="/"
-              component={NextLink}
-              color="inherit"
-              underline="none"
-              textTransform="capitalize"
-            >
-              privacy policy
             </Link>
           </Typography>
         </Stack>

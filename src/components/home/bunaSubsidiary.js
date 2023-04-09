@@ -98,7 +98,24 @@ const BunaSubsidiary = () => {
   return (
     <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative">
       <Container>
-        <InnerTitle title="BUNA SUBSIDIARIES" align="center" color="primary" />
+
+        <Stack mb={3} position="relative" textAlign="center" sx={{
+            "&:before": {
+                content: '""',
+                position: 'absolute',
+                display: 'block',
+                width: "50px",
+                height: '3px',
+                backgroundColor: '#10584d',
+                top: "-6px",
+                transform: 'translateY(-50%)',
+                left: '50%'
+            }
+        }}>
+            <Typography component="h1" variant="h2" color="primary" pt={1} pb={3}>BUNA SUBSIDIARIES</Typography>
+        </Stack>
+
+
         <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
           {subsidImg?.map((item) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={item.id}>
