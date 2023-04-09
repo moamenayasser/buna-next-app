@@ -3,7 +3,7 @@
 export const SideTitle = ({ title }) => {
     const style = {
         display: 'inline-block',
-        fontSize: '12vw',
+        fontSize: '10vw',
         lineHeight: '120px',
         fontWeight: 400,
         transform: 'rotate(270deg)',
