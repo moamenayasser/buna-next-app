@@ -3,9 +3,9 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 
-const InnerTitle = ({ title, align , color}) => {
+const InnerTitle = ({ title , color}) => {
     return (
-        <Stack mb={3} position="relative" textAlign={align} sx={{
+        <Stack mb={3} position="relative" sx={{
             "&:before": {
                 content: '""',
                 position: 'absolute',
@@ -15,10 +15,10 @@ const InnerTitle = ({ title, align , color}) => {
                 backgroundColor: '#10584d',
                 top: "-6px",
                 transform: 'translateY(-50%)',
-                left: `{${align === 'left'} ? '48%' : '50%'}`
+                left: 0
             }
         }}>
-            <Typography component="h1" variant="h2" color={color} pt={1} pb={3}>{title} </Typography>
+            <Typography component="h1" variant="h2" pt={1} pb={3} color={color}>{title} </Typography>
         </Stack>
     )
 }

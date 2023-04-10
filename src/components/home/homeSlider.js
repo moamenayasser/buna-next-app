@@ -11,6 +11,7 @@ import "swiper/css/effect-creative";
 import SliderItem from "../sliderItem";
 import { EffectCreative } from "swiper";
 
+
 const bannerData = [
   {
     "id": 1,

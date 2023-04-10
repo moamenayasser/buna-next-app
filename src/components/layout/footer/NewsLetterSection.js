@@ -61,13 +61,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
         Subscribe to our newsletter
       </Typography>
 
-      <Stack direction="row" alignItems="center" gap={2}>
-        <SocialItems
-          socialIcons={socialIcons}
-          sx={{ backgroundColor: "secondary.main" }}
-          size="small"
-        />
-      </Stack>
+      
     </>
   );
 };

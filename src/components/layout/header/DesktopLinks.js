@@ -8,6 +8,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 // Component
 import NextActiveLink from "@/components/NextActiveLink";
 
+
 const LinksWrapperStyle = styled("li")(({ theme }) => ({
   position: "relative",
   "& > a": {
@@ -31,10 +32,10 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       zIndex: -1,
       position: 'absolute',
       content: '""',
-      left: '50%',
-      width: '2px',
-      bottom: '-5px',
-      height: '0%',
+      left: '10%',
+      width: '0',
+      top: '0px',
+      height: '2px',
       backgroundColor: theme.palette.secondary.main,
       transition: 'all 0.5s ease-out',
     },
@@ -45,10 +46,9 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
     },
     "&:hover": {
       backgroundColor: "unset",
-      // color: theme.palette.secondary.main,
 
       "&:after": {
-        height: "40%",
+        width: "80%",
       },
     },
   },
@@ -69,19 +69,18 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       zIndex: -1,
       position: 'absolute',
       content: '""',
-      left: '50%',
-      width: '2px',
-      bottom: '-5px',
-      height: '0%',
+      left: '10%',
+      width: '0',
+      top: '0',
+      height: '2px',
       backgroundColor: theme.palette.secondary.main,
       transition: 'all 0.5s ease-out',
     },
 
     "&:hover": {
       backgroundColor: "unset",
-      // color: theme.palette.secondary.main,
       "&:after": {
-        height: "40%",
+        width: "80%",
       },
     },
   },

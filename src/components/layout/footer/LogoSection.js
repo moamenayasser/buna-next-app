@@ -4,6 +4,9 @@ import Link from "next/link";
 // MUI
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
+// Components
+import SocialItems from "../header/SocialItems";
+
 
 const footerImg = [
   {
@@ -32,7 +35,7 @@ const footerImg = [
   },
 ];
 
-const LogoSection = () => {
+const LogoSection = ({socialIcons}) => {
   return (
     <>
       <Typography
@@ -46,7 +49,7 @@ const LogoSection = () => {
       <Typography variant="body2" mb={4} width="90%">
         A pioneer with a unique vision in contracting and construction management.
       </Typography>
-      <Stack display="inline">
+      {/* <Stack display="inline">
         {footerImg?.map((item) => (
           <Link href="/" key={item.id}>
             <Image
@@ -58,6 +61,14 @@ const LogoSection = () => {
             />
           </Link>
         ))}
+      </Stack> */}
+
+      <Stack direction="row" alignItems="center" gap={2}>
+        <SocialItems
+          socialIcons={socialIcons}
+          sx={{ backgroundColor: "secondary.main" }}
+          size="small"
+        />
       </Stack>
 
     </>

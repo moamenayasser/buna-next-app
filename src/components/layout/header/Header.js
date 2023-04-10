@@ -11,10 +11,10 @@ import UtilitySection from "./UtilitySection";
 
 const Header = forwardRef((props, ref) => {
   const { headerLinks, socialIcons, locale, ...other } = props;
-  
+
 
   return (
-    <AppBar ref={ref} {...other} style={{ backgroundColor: other["data-trigger"] ? "#000" : "transparent" }}>
+    <AppBar ref={ref} {...other} style={{ background: other["data-trigger"] ? "#000" : "linear-gradient(rgb(16 16 16 / 63%) 39.78%, rgb(0 0 0 / 11%) 83.61%, rgb(16 16 16 / 0%) 104.61%)" }}>
       <Container>
         <Toolbar disableGutters style={{ justifyContent: "space-between" }}>
           <BrandSection trigger={other["data-trigger"]} />

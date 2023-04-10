@@ -98,7 +98,7 @@ const ClientsSec = ({ locale }) => {
                 backgroundColor: '#000',
             }
         }}>
-            <Container style={{ backgroundColor: "#fff" ,width:"80%", zIndex: 99, position: 'relative', padding: '35px 0 10px' }}>
+            <div style={{ backgroundColor: "#fff" ,width:"80%", zIndex: 99, position: 'relative', padding: '35px 0 10px', margin: 'auto' }}>
                 <Swiper className="newSwiper" style={{ marginBottom: '30px' }} {...options}>
                     {clientsImg?.map((item) => (
                         <SwiperSlide key={item.id}>
@@ -123,7 +123,7 @@ const ClientsSec = ({ locale }) => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </Container>
+            </div>
         </Box>
     );
 };
