@@ -5,7 +5,7 @@ import Link from "next/link";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import { styled } from "@mui/material";
+import { styled, Typography } from "@mui/material";
 
 
 const BoxStyle = styled(Box)(({ theme }) => ({
@@ -14,44 +14,25 @@ const BoxStyle = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: "center",
   padding: "0 200px",
-  zIndex: "1",
+  // zIndex: "1",
 
   "& .content": {
     position: 'relative',
     padding: '30px',
-    background: "linear-gradient(90deg, #101010 2.78%, rgba(16, 16, 16, 0) 81.61%)",
+    background: "#F5F5F5",
     animation: 'slideInLeft 0.8s linear',
     "& :before": {
       content: '""',
       position: "absolute",
+      display: 'block',
       left: "0",
       top: "0",
       width: "5px",
       height: "100%",
       backgroundColor: theme.palette.secondary.main,
     },
-    "& .title": {
-      color: "#fff",
-      fontSize: "5rem",
-      fontWeight: "bold",
-      textTransform: "uppercase",
-      fontFamily: "sans-serif",
-    },
-    "& .subtitle": {
-      color: "#fff",
-      fontSize: "1.8rem",
-      marginBottom: theme.spacing(3),
-      fontFamily: "sans-serif",
-    },
-    "& .text": {
-      maxWidth: "500px",
-      color: "#ebebeb",
-      fontWeight: "300",
-      fontFamily: "sans-serif",
-    },
   }
 }));
-
 
 
 const SliderItem = ({ item }) => {
@@ -66,18 +47,16 @@ const SliderItem = ({ item }) => {
       />
       <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
         <div className="content">
-          <div className="title" data-swiper-parallax="-300">
+          <Typography component="h1" variant="h1">
             {item.title_en}
-          </div>
-          <div className="text" data-swiper-parallax="-100">
+          </Typography>
+          <Typography component="p" variant="body1">
             {item.desc_en}
-          </div>
+          </Typography>
           <Stack display="flex" justifyContent="flex-start" gap="15px" flexDirection="row" mt={4}>
-            <Link href="/">
-              <Button variant="outlined" color="primary" mt={8}>
+              <Button component={Link} href="/" variant="contained" color="primary" mt={8}>
                 About us
               </Button>
-            </Link>
           </Stack>
         </div>
       </BoxStyle>

@@ -4,8 +4,6 @@ import Link from "next/link";
 // MUI
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-// Components
-import SocialItems from "../header/SocialItems";
 
 
 const footerImg = [
@@ -35,7 +33,7 @@ const footerImg = [
   },
 ];
 
-const LogoSection = ({socialIcons}) => {
+const LogoSection = () => {
   return (
     <>
       <Typography
@@ -46,29 +44,19 @@ const LogoSection = ({socialIcons}) => {
       >
         Company Structure
       </Typography>
-      <Typography variant="body2" mb={4} width="90%">
+      <Typography variant="body2" mb={3} width="90%">
         A pioneer with a unique vision in contracting and construction management.
       </Typography>
-      {/* <Stack display="inline">
-        {footerImg?.map((item) => (
-          <Link href="/" key={item.id}>
+      <Stack display="inline">
+          <Link href="/">
             <Image
-              src={item.img}
-              alt={item.name}
+              src="/images/BUNA-LOGO-white.png"
+              alt="Buna Logo"
               width={100}
               height={60}
               style={{ maxWidth: "100%", objectFit:'contain', margin: '5px' }}
             />
           </Link>
-        ))}
-      </Stack> */}
-
-      <Stack direction="row" alignItems="center" gap={2}>
-        <SocialItems
-          socialIcons={socialIcons}
-          sx={{ backgroundColor: "secondary.main" }}
-          size="small"
-        />
       </Stack>
 
     </>

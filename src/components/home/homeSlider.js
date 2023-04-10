@@ -61,23 +61,11 @@ const HomeSlider = () => {
   return (
     <Swiper
       modules={[Navigation, Pagination, EffectCreative]}
-      effect={"creative"}
-      creativeEffect={{
-        prev: {
-          shadow: true,
-          translate: [0, 0, -400],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      }}
       spaceBetween={50}
       slidesPerView={1}
       navigation
       loop={true}
       pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
     >
       {bannerData?.length !== 0 &&
         bannerData?.map((el) => (

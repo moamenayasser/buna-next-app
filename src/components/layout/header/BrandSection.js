@@ -7,11 +7,11 @@ import LogoW from "/public/images/BUNA-LOGO-white.png";
 
 const BrandSection = ({ trigger }) => {
   return (
-    <div>
+    <div style={{ backgroundColor: '#fff', padding: '0 5px' }}>
       <Link href="/" style={{ display: "flex" }}>
         <span style={{ display:"flex" }}>
           <Image
-            src={LogoW}
+            src={Logo}
             alt="Buna Logo"
             width={180}
             height={100}

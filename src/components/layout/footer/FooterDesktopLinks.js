@@ -26,10 +26,10 @@ const LinksWrapperStyle = styled("ul")({
       position: "absolute",
       left: 0,
       right: 0,
-      bottom: 0,
+      bottom: '5px',
       width: 0,
       height: 1,
-      backgroundColor: "#fff",
+      backgroundColor: "#0b594f",
       transition: "0.25s ease-in-out",
     },
     "&:hover": {

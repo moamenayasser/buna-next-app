@@ -27,10 +27,11 @@ const global = responsiveFontSizes(createTheme({
         h1: {
             fontWeight: 600,
             textTransform: "uppercase",
+            fontSize: '3.8rem',
         },
         h2: {
             textTransform: "uppercase",
-            fontSize: 40,
+            fontSize: '2.5rem',
             fontWeight: 600,
         },
         h3: {
@@ -95,7 +96,7 @@ const global = responsiveFontSizes(createTheme({
                     color: "#000",
                     backgroundColor: "#fff",
                     boxShadow: "unset",
-                    border: "2px solid #fff",
+                    border: "2px solid #000",
 
                     "&:after": {
                         width: 0,
@@ -112,7 +113,7 @@ const global = responsiveFontSizes(createTheme({
                     "&:hover": {
                         color: '#fff !important',
                         boxShadow: "unset",
-                        border: "2px solid #fff",
+                        border: "2px solid #000",
 
                         "&:after": {
                             width: '100%',

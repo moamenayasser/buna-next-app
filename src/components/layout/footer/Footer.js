@@ -51,7 +51,7 @@ const Footer = (props) => {
       <Container>
         <Grid container spacing={2} position="relative">
           <Grid item xs={12} md={4} lg={3}>
-            <LogoSection socialIcons={socialIcons}/>
+            <LogoSection />
           </Grid>
 
           {footerLinks?.map((item, index) => (
@@ -69,7 +69,7 @@ const Footer = (props) => {
 
           <Grid item xs={12} sm={6} lg>
             <Box>
-              <NewsLetterSection locale={locale} />
+              <NewsLetterSection socialIcons={socialIcons} locale={locale} />
             </Box>
           </Grid>
         </Grid>

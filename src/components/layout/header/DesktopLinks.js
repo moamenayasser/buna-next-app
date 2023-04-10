@@ -32,7 +32,7 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       zIndex: -1,
       position: 'absolute',
       content: '""',
-      left: '10%',
+      left: '10% ',
       width: '0',
       top: '0px',
       height: '2px',
@@ -41,7 +41,7 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
     },
     "&.active": {
       "&:after": {
-        width: "100%",
+        width: "80%",
       },
     },
     "&:hover": {
@@ -58,6 +58,7 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
     textTransform: "capitalize",
     lineHeight: 1.75,
     height:40,
+    padding: '15px',
     fontWeight: 500,
     position:"relative",
     color: '#fff',

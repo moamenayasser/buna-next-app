@@ -7,7 +7,7 @@ import Link from "@mui/material/Link";
 
 const CopyRight = () => {
   return (
-    <Box dir="ltr" bgcolor="common.black" color="common.white" py={2}>
+    <Box bgcolor="common.black" color="common.white" py={2}>
       <Container>
         <Stack
           direction={{ md: "row" }}
@@ -15,7 +15,7 @@ const CopyRight = () => {
           justifyContent="center"
           gap={1}
         >
-          <Typography fontSize="0.65rem">
+          <Typography fontSize="0.4rem">
             &copy; {new Date().getFullYear()}. All Rights Reserved. | Developed
             & Designed by{" "}
             <Link
