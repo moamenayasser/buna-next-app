@@ -7,7 +7,7 @@ import LogoW from "/public/images/BUNA-LOGO-white.png";
 
 const BrandSection = ({ trigger }) => {
   return (
-    <div style={{ backgroundColor: '#fff', padding: '0 5px' }}>
+    <div style={{ background: `${trigger}` ? "#fff": '#000' , padding: '0 5px' }}>
       <Link href="/" style={{ display: "flex" }}>
         <span style={{ display:"flex" }}>
           <Image

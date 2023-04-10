@@ -70,25 +70,32 @@ const global = responsiveFontSizes(createTheme({
                     backgroundColor: "#000",
                     boxShadow: "unset",
                     border: "2px solid #000",
-
-                    "&:after": {
-                        width: 0,
+                    zIndex: 1,
+                    position: "relative",
+                    overflow: "hidden",
+                    
+                    "&::after": {
+                        width: '100%',
                         height: '100%',
                         top: 0,
                         left: 0,
                         background: '#fff',
                         content: '""',
+                        zIndex: '-1',
+                        transform: 'translateY(110%)',
+                        transition: '0.2s linear',
+                        transitionDelay: '0.1s',
                         display: 'block',
                         position: 'absolute',
-                        transition: 'all 0.3s',
                     },
 
                     "&:hover": {
-                        color: '#000 !important',
+                        color: '#000',
                         boxShadow: "unset",
+                        transition: '0.2s linear',
 
-                        "&:after": {
-                            width: '100%',
+                        "&::after": {
+                            transform: 'translateY(0)',
                         }
                     },
                 },
@@ -97,31 +104,45 @@ const global = responsiveFontSizes(createTheme({
                     backgroundColor: "#fff",
                     boxShadow: "unset",
                     border: "2px solid #000",
-
-                    "&:after": {
-                        width: 0,
+                    zIndex: 1,
+                    position: "relative",
+                    overflow: "hidden",
+                    
+                    "&::after": {
+                        width: '100%',
                         height: '100%',
                         top: 0,
                         left: 0,
                         background: '#000',
                         content: '""',
+                        zIndex: '-1',
+                        transform: 'translateY(110%)',
+                        transition: '0.2s linear',
+                        transitionDelay: '0.1s',
                         display: 'block',
                         position: 'absolute',
-                        transition: 'all 0.3s',
                     },
 
                     "&:hover": {
-                        color: '#fff !important',
+                        color: '#fff',
                         boxShadow: "unset",
+                        transition: '0.2s linear',
                         border: "2px solid #000",
 
-                        "&:after": {
-                            width: '100%',
+                        "&::after": {
+                            transform: 'translateY(0)',
                         }
                     },
                 },
             },
         },
+        MuiTouchRipple: {
+            styleOverrides: {
+                root: {
+                    display: 'none',
+                }
+            }
+        }
     }
 }));
 

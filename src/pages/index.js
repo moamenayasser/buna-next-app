@@ -1,4 +1,5 @@
 // Internal Imports
+import { useEffect, useState } from "react";
 import Head from "next/head";
 // Components
 import Layout from "@/components/layout/Layout";
@@ -8,14 +9,20 @@ import BunaSubsidiary from "@/components/home/bunaSubsidiary";
 import ProjectSec from "@/components/home/projectSec";
 import ClientsSec from "@/components/home/clientsSec";
 import CertificateSec from "@/components/home/certificateSec";
+import ContactSec from "@/components/home/contactSec";
+import Loader from "@/components/Loader";
 // Data
 import globalData from "@/utils/data.json";
-import ContactSec from "@/components/home/contactSec";
 
 
 const Home = ({ data , locale}) => {
   const { resources, home: { Banner, AboutSection } } = data;
   const { headerLinks, footerLinks, socialIcons } = globalData;
+
+  const [loading , setLoading] = useState(true);
+  useEffect(() => setLoading(false), [])
+
+  if (loading) return <Loader />;
 
   return (
     <>

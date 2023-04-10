@@ -108,8 +108,12 @@ const ContactBox = styled(Box)(({ theme }) => ({
   },
   "& .thumbnail1": {
     position: 'relative',
-    maxWidth: 'max-content', 
+    width: '100%',
+    height: '600px', 
     zIndex: 1,
+    [theme.breakpoints.down('md')]:{
+      height: '400px'
+    },
 
     "&:after": {
       position: 'absolute',
@@ -127,11 +131,11 @@ const ContactBox = styled(Box)(({ theme }) => ({
 
 const ContactSec = ({ locale }) => {
   return (
-    <ContactBox mt={10} pt={10} pb={10}  position="relative" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom left' }}>
+    <ContactBox mt={7} pt={7} pb={7}  position="relative" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom left' }}>
       <Container>
         
         <Grid container spacing={3} >
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={6}>
             <InnerTitle title="Contact Us" color="#000" />
             <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
               <Grid item xs={12} sm={12} md={12}>
@@ -215,23 +219,12 @@ const ContactSec = ({ locale }) => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} md={6}>
             <Box>
               <div className="thumbnail1">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3708.222520337378!2d39.1104859!3d21.6551996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d975b69b19ed%3A0xa4e902d50c145dc0!2z2LTYsdmD2Kkg2LPZhdmIINin2YTYudmC2KfYsdmK2Kk!5e0!3m2!1sar!2seg!4v1681123445716!5m2!1sar!2seg" width={600} height={600} style={{border: 0 , width: '100%', height: '100%'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture full" ></iframe>
-                {/* <Image
-                  width={450}
-                  height={500}
-                  alt="complex"
-                  src="/images/02.jpg"
-                  style={{ objectFit: 'cover'}}
-                /> */}
               </div>
             </Box>
-
-            {/* <div className="contact-img" style={{ position: 'relative', width: '100%', height: '100%' }}>
-              <Image src="/images/02.jpg" alt="image" fill style={{ objectFit: 'cover' }} />
-            </div> */}
           </Grid>
         </Grid>
 
