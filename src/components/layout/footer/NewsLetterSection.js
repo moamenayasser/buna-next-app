@@ -29,7 +29,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
           id="buna-news-letter"
           placeholder="Email Address"
           endAdornment={
-            <InputAdornment position="end">
+            <InputAdornment position="end" style={{ padding: 0}}>
               <IconButton
                 size="small"
                 aria-label="submit newsletter"
@@ -49,6 +49,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
             fontSize: "0.85rem",
             padding: '0px',
             backgroundColor: "#bfbfbf",
+            borderRadius: 0
           }}
         />
       </FormControl>
