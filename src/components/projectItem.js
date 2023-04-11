@@ -86,18 +86,17 @@ const PorjectCard = styled(Box)(({ theme }) => ({
     },
 }))
 
-const ProjectItem = () => {
+const ProjectItem = ({item}) => {
     return (
         <PorjectCard>
             <div className="project-media" style={{ position: 'relative', overflow: 'hidden' }}>
-                <Image src="/images/news1.jpg" alt="Projects" width={300} height={300} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <Image src={item.img} alt="Projects" width={400} height={400} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div className="project-content">
                 <Link href="/">
-                    <Typography component="h5" variant="h4" className="project-title">Factory renovation architecture works</Typography>
+                    <Typography component="h5" variant="h4" className="project-title">{item.name}</Typography>
                 </Link>
                 <div className="divider"></div>
-                {/* <Typography component="p" variant="p" truncate={2}>Company kaya nisl ullamcorper the duru metu enna lophare mavna busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.</Typography> */}
                 <Link href="/" className="link-btn">
                     Read More
                 </Link>

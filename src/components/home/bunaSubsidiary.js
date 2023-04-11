@@ -73,25 +73,25 @@ const subsidImg = [
     id: 1,
     img: "/images/align-management.png",
     name: "Alignment Management",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    desc: "Design & Build specialized contractor, With several divisions"
   },
   {
     id: 2,
     img: "/images/TAAM Logo.svg",
     name: "Taam Group",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    desc: "Design & Build specialized contractor, With several divisions"
   },
   {
     id: 3,
     img: "/images/dac.png",
     name: "Dac Group",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    desc: "Design & Build specialized contractor, With several divisions"
   },
   {
     id: 4,
     img: "/images/BUNA-LOGO-black.png",
     name: "Buna Group",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    desc: "Design & Build specialized contractor, With several divisions"
   },
 ];
 

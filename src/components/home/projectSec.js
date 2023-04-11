@@ -15,6 +15,23 @@ import InnerTitle from "../InnerTitle";
 import dots from '../../../public/images/dot-corner.png'
 import GlobalBtn from "../GlobalBtn";
 
+const projectsData = [
+    {
+        id: 1,
+        img: "/images/tower.jpg",
+        name: "SUMOU TOWER",
+    },
+    {
+        id: 2,
+        img: "/images/gate.jpg",
+        name: "SUMOU GATE",
+    },
+    {
+        id: 3,
+        img: "/images/bark.jpg",
+        name: "SUMOU PARK",
+    },
+];
 
 const ProjectSec = ({ locale }) => {
     const options = {
@@ -37,7 +54,7 @@ const ProjectSec = ({ locale }) => {
             clickable: true
         },
         modules: [Navigation],
-        navigation:{
+        navigation: {
             clickable: true,
         },
         loop: true,
@@ -49,7 +66,12 @@ const ProjectSec = ({ locale }) => {
                 <InnerTitle title="Featured Projects" align="left" />
 
                 <Swiper className="newSwiper" style={{ marginBottom: '30px' }} {...options}>
-                    <SwiperSlide>
+                    {projectsData?.map((item) => 
+                        <SwiperSlide key={item.id}>
+                            <ProjectItem item={item} />
+                        </SwiperSlide>
+                    )}
+                    {/* <SwiperSlide>
                         <ProjectItem />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -66,10 +88,7 @@ const ProjectSec = ({ locale }) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                 </Swiper>
 
                 <Stack display="block" textAlign="center">

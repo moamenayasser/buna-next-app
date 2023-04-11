@@ -31,7 +31,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
         component="form"
       >
         <FilledInput
-          id="taam-news-letter"
+          id="buna-news-letter"
           placeholder="Email Address"
           endAdornment={
             <InputAdornment position="end">
