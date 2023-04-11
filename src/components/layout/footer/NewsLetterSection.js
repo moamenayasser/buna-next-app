@@ -13,12 +13,7 @@ import SocialItems from "../header/SocialItems";
 const NewsLetterSection = ({ socialIcons, locale }) => {
   return (
     <>
-      <Typography
-        component="h4"
-        variant="h6"
-        textTransform="capitalize"
-        gutterBottom
-      >
+      <Typography component="h4" variant="h6" textTransform="capitalize" gutterBottom >
         newsletter
       </Typography>
 
