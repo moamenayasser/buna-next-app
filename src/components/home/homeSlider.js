@@ -1,15 +1,13 @@
 // import Swiper core and required modules
-import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Navigation, Pagination, EffectFade, Keyboard, Autoplay } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/effect-creative";
+import "swiper/css/effect-fade";
+// Component
 import SliderItem from "../sliderItem";
-import { EffectCreative } from "swiper";
 
 
 const bannerData = [
@@ -18,7 +16,7 @@ const bannerData = [
     "img": {
       "width": 1900,
       "height": 600,
-      "imgUrl": "/images/01.jpg"
+      "url": "/images/01.jpg"
     },
     "desc_ar": " العماره الداخليه واهميتها  العماره الداخليه واهميتها .",
     "desc_en": " Inoterior design consultancy firm that brings sensitivity to the design top restaurants.",
@@ -32,7 +30,7 @@ const bannerData = [
     "img": {
       "width": 1900,
       "height": 600,
-      "imgUrl": "/images/02.jpg"
+      "url": "/images/02.jpg"
     },
     "desc_ar": " العماره الداخليه واهميتها  العماره الداخليه واهميتها .",
     "desc_en": " Inoterior design consultancy firm that brings sensitivity to the design top restaurants.",
@@ -46,7 +44,7 @@ const bannerData = [
     "img": {
       "width": 1900,
       "height": 600,
-      "imgUrl": "/images/03.jpg"
+      "url": "/images/03.jpg"
     },
     "desc_ar": " العماره الداخليه واهميتها  العماره الداخليه واهميتها .",
     "desc_en": " Inoterior design consultancy firm that brings sensitivity to the design top restaurants.",
@@ -59,12 +57,20 @@ const bannerData = [
 
 const HomeSlider = () => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, EffectCreative]}
+    <Swiper className="main-slider"
+      modules={[Navigation, Pagination, EffectFade, Keyboard, Autoplay]}
       spaceBetween={50}
       slidesPerView={1}
-      navigation
+      effect={"fade"}
+      keyboard={{
+        enabled: true,
+      }}
+      autoplay={{
+        delay: 7000,
+        disableOnInteraction: false,
+      }}
       loop={true}
+      navigation
       pagination={{ clickable: true }}
     >
       {bannerData?.length !== 0 &&

@@ -6,18 +6,30 @@ import Logo from "/public/images/BUNA-LOGO-black.png";
 import LogoW from "/public/images/BUNA-LOGO-white.png";
 
 const BrandSection = ({ trigger }) => {
+
   return (
-    <div style={{ background: `${trigger}` ? "#fff": '#000' , padding: '0 5px' }}>
+    <div style={{ background: trigger ? "#000" : '#fff', padding: '0 5px' }}>
       <Link href="/" style={{ display: "flex" }}>
-        <span style={{ display:"flex" }}>
-          <Image
-            src={Logo}
-            alt="Buna Logo"
-            width={180}
-            height={100}
-            priority
-            style={{ objectFit: 'contain'}}
-          />
+        <span style={{ display: "flex" }}>
+          {trigger ?
+            <Image
+              src={LogoW}
+              alt="Buna Logo"
+              width={150}
+              height={100}
+              priority
+              style={{ objectFit: 'contain' }}
+            />
+            :
+            <Image
+              src={Logo}
+              alt="Buna Logo"
+              width={150}
+              height={100}
+              priority
+              style={{ objectFit: 'contain' }}
+            />
+          }
         </span>
       </Link>
     </div>

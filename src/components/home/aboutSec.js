@@ -47,12 +47,19 @@ const ImageContainer = styled(Box)(({ theme }) => ({
       maxWidth: '100%',
 
       "&:after": {
-        display: 'none',
+        left: '10px',
       }
     },
     "& .thumbnail2": {
       display: 'none',
     }
+  },
+  [theme.breakpoints.down('sm')]: {
+    "& .thumbnail1": {
+      "&:after": {
+        display: 'none',
+      }
+    },
   }
 }));
 

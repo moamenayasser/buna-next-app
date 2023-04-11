@@ -18,16 +18,14 @@ export const SideTitle = ({ title }) => {
         WebkitTextStrokeColor: '#10584b',
         opacity: '.1',
 
-        // '@media and (max-width: 1500px)': {
-        //     fontSize: '60px',
-        //     lineHeight: '60px',
-        //     right: '40px',
-        // }
+        '@media and (max-width: 768px)': {
+            display: 'none'
+        }
     }
 
     return (
         <div className="side-title">
             <strong style={style}>{title}</strong>
-        </div >
+        </div>
     )
 }

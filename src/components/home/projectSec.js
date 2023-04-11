@@ -36,12 +36,11 @@ const ProjectSec = ({ locale }) => {
         pagination: {
             clickable: true
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        modules: [Navigation],
+        navigation:{
+            clickable: true,
         },
         loop: true,
-        modules: [Navigation]
     }
 
     return (
@@ -71,10 +70,6 @@ const ProjectSec = ({ locale }) => {
                     <SwiperSlide>
                         <ProjectItem />
                     </SwiperSlide>
-
-                    {/* Add Navigation */}
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
                 </Swiper>
 
                 <Stack display="block" textAlign="center">

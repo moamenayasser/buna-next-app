@@ -111,10 +111,6 @@ const ContactBox = styled(Box)(({ theme }) => ({
     width: '100%',
     height: '600px', 
     zIndex: 1,
-    [theme.breakpoints.down('md')]:{
-      height: '400px'
-    },
-
     "&:after": {
       position: 'absolute',
       content: '""',
@@ -124,7 +120,13 @@ const ContactBox = styled(Box)(({ theme }) => ({
       left: '30px',
       top: '30px',
       zIndex: -1,
-    }
+    },
+    [theme.breakpoints.down('md')]:{
+      height: '400px',
+      "&:after":{
+        left: '10px'
+      }
+    },
   },
 }));
 
@@ -139,7 +141,7 @@ const ContactSec = ({ locale }) => {
             <InnerTitle title="Contact Us" color="#000" />
             <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
               <Grid item xs={12} sm={12} md={12}>
-                <Box className="card-box" flexDirection={{ xs: 'column', sm: 'row', md: 'row' }}>
+                <Box className="card-box">
                   <div className="card-img">
                     <Image src="/images/address.svg" alt="Address" width={50} height={50} />
                   </div>
@@ -156,8 +158,8 @@ const ContactSec = ({ locale }) => {
                 </Box>
               </Grid>
 
-              <Grid item xs={6} sm={6} md={6}>
-                <Box className="card-box" flexDirection={{ xs: 'column', sm: 'row', md: 'row' }}>
+              <Grid item xs={12} sm={6} md={6}>
+                <Box className="card-box">
                   <div className="card-img">
                     <Image src="/images/pb-box.svg" alt="Po-box" width={50} height={50} />
                   </div>
@@ -170,8 +172,8 @@ const ContactSec = ({ locale }) => {
                 </Box>
               </Grid>
 
-              <Grid item xs={6} sm={6} md={6}>
-                <Box className="card-box" flexDirection={{ xs: 'column', sm: 'row', md: 'row' }}>
+              <Grid item xs={12} sm={6} md={6}>
+                <Box className="card-box">
                   <div className="card-img">
                     <Image src="/images/phone.svg" alt="Phone" width={50} height={50} />
                   </div>
@@ -186,8 +188,8 @@ const ContactSec = ({ locale }) => {
                 </Box>
               </Grid>
 
-              <Grid item xs={6} sm={6} md={6}>
-                <Box className="card-box" flexDirection={{ xs: 'column', sm: 'row', md: 'row' }}>
+              <Grid item xs={12} sm={6} md={6}>
+                <Box className="card-box">
                   <div className="card-img">
                     <Image src="/images/email.svg" alt="Email" width={50} height={50} />
                   </div>
@@ -202,8 +204,8 @@ const ContactSec = ({ locale }) => {
                 </Box>
               </Grid>
 
-              <Grid item xs={6} sm={6} md={6}>
-                <Box className="card-box" flexDirection={{ xs: 'column', sm: 'row', md: 'row' }}  textAlign={{ xs: 'center' , sm: locale === 'en' ? 'left' : 'right'}}>
+              <Grid item xs={12} sm={6} md={6}>
+                <Box className="card-box">
                   <div className="card-img">
                     <Image src="/images/fax.svg" alt="Fax" width={50} height={50} />
                   </div>

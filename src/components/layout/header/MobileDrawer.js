@@ -24,7 +24,7 @@ import NextActiveLink from "@/components/NextActiveLink";
 import LangSwitch from "@/components/LangSwitch";
 import SocialItems from "./SocialItems";
 // Images
-import LogoImg from "/public/images/TAAM Logo.svg";
+import LogoImg from "/public/images/BUNA-LOGO-black.png";
 
 const DrawerHeaderStyle = styled("div")(({ theme }) => ({
   display: "flex",
@@ -72,13 +72,13 @@ const MobileDrawer = (props) => {
   return (
     <Box display={{ md: "none" }}>
       <IconButton
-        color="inherit"
+        color="#fff"
         aria-label="menu"
         size="small"
         sx={{ display: { md: "none" } }}
         onClick={toggleDrawer}
       >
-        <MenuIcon style={{ fontSize: "2rem" }} />
+        <MenuIcon style={{ fontSize: "2rem" }} color="#fff" />
       </IconButton>
 
       <Drawer anchor="left" open={open} onClose={toggleDrawer}>
@@ -90,9 +90,10 @@ const MobileDrawer = (props) => {
           >
             <Image
               src={LogoImg}
-              alt="Taam Logo"
+              alt="Buna Logo"
               height={100}
-              style={{ width: "auto" }}
+              width={100}
+              style={{ objectFit: "contain" }}
             />
           </NextActiveLink>
 

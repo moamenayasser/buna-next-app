@@ -27,7 +27,7 @@ const global = responsiveFontSizes(createTheme({
         h1: {
             fontWeight: 600,
             textTransform: "uppercase",
-            fontSize: '3.8rem',
+            fontSize: '3.5rem',
         },
         h2: {
             textTransform: "uppercase",

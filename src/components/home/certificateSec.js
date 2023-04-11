@@ -22,9 +22,6 @@ const CrossedSec = styled(Box)(({ theme }) => ({
                 transform: 'scale(1.2)'
             }
         },
-        [theme.breakpoints.down('md')]: {
-            width: '100%',
-        },
     },
     "& .caption": {
         left: 'auto',
@@ -40,6 +37,15 @@ const CrossedSec = styled(Box)(({ theme }) => ({
         [theme.breakpoints.down('md')]: {
             width: '100%',
             position: 'relative',
+        }
+    },
+    [theme.breakpoints.down('md')]: {
+        "& figure": {
+            width: '100%',
+            height: '350px'
+        },
+        "& .caption":{
+            transform: 'unset'
         }
     },
 }));

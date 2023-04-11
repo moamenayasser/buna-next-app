@@ -42,7 +42,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
               >
                 <SendOutlinedIcon
                   style={{
-                    color: "#d7282b",
+                    color: "#0b594f",
                     fontSize: "1rem",
                   }}
                 />
@@ -52,7 +52,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
           style={{
             color: "#fff",
             fontSize: "0.85rem",
-            backgroundColor: "rgb(217 197 197 / 6%)",
+            backgroundColor: "#fff",
           }}
         />
       </FormControl>
