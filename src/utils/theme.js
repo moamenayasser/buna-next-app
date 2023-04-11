@@ -127,7 +127,7 @@ const global = responsiveFontSizes(createTheme({
                         color: '#fff',
                         boxShadow: "unset",
                         transition: '0.2s linear',
-                        border: "2px solid #000",
+                        border: "2px solid #fff",
 
                         "&::after": {
                             transform: 'translateY(0)',

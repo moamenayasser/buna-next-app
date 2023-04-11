@@ -26,7 +26,7 @@ const CrossedSec = styled(Box)(({ theme }) => ({
     "& .caption": {
         left: 'auto',
         right: 0,
-        background: '#fff',
+        background: '#000',
         padding: '5% 4% 5% 4%',
         position: 'absolute',
         border: '1px solid rgba(0,0,0,0.2)',
@@ -59,9 +59,9 @@ const CertificateSec = () => {
                         <Image src={banner.src} alt="Certificate" fill style={{ objectFit: 'cover', transition: 'all 0.5s', }} />
                     </figure>
                     <div className="caption" >
-                        <InnerTitle title="Certificate" color="#000" />
+                        <InnerTitle title="Certificate" color="#fff" />
 
-                        <Typography variant="body1" component="p" pb={6} color="#000">
+                        <Typography variant="body1" component="p" pb={6} color="#fff">
                             BUNA's vision is brought to fruition by overcoming challenges and achieving incredible milestones. These certifications speak for our ethics, integrity, and dedication in the work we do.
                         </Typography>
                         <GlobalBtn title="All Certificates" href="/" variant="outlined" />

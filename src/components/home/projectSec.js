@@ -71,24 +71,6 @@ const ProjectSec = ({ locale }) => {
                             <ProjectItem item={item} />
                         </SwiperSlide>
                     )}
-                    {/* <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide> */}
                 </Swiper>
 
                 <Stack display="block" textAlign="center">

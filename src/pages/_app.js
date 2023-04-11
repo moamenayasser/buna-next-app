@@ -10,11 +10,7 @@ export default function App({ Component, pageProps }) {
   const locale = pageProps.locale || "en";
 
    useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-    });
+    AOS.init();
   }, []);
 
   return (

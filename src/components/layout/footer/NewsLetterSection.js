@@ -26,7 +26,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
         variant="outlined"
         fullWidth
         required
-        style={{ marginBottom: "1rem" }}
+        style={{ marginBottom: "0.5rem" }}
         color="primary"
         component="form"
       >
@@ -50,14 +50,15 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
             </InputAdornment>
           }
           style={{
-            color: "#fff",
+            color: "#000",
             fontSize: "0.85rem",
-            backgroundColor: "#fff",
+            padding: '0px',
+            backgroundColor: "#bfbfbf",
           }}
         />
       </FormControl>
 
-      <Typography variant="body2" mb={4}>
+      <Typography variant="body1" mb={4}>
         Subscribe to our newsletter
       </Typography>
 
