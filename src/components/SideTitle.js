@@ -6,7 +6,7 @@ export const SideTitle = ({ title , locale }) => {
         fontSize: '10vw',
         lineHeight: '120px',
         fontWeight: 400,
-        transform: locale === "en" ? 'rotate(270deg)' : 'rotate(90deg)',
+        transform: locale === "en" ? 'rotate(270deg)' : 'rotate(180deg)',
         position: 'absolute',
         right: locale === "en" ? "50px" : "" ,
         left: locale === "en" ? "" : "50px" ,
@@ -19,7 +19,7 @@ export const SideTitle = ({ title , locale }) => {
         WebkitTextStrokeColor: '#10584b',
         opacity: '.1',
 
-        "@media (maxWidth: 768px)": {
+        '@media and (maxWidth: 768px)': {
             display: 'none'
         }
     }
