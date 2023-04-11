@@ -14,7 +14,7 @@ const bannerData = [
   {
     "id": 1,
     "img": {
-      "width": 1900,
+      "width": 1800,
       "height": 600,
       "url": "/images/01.jpg"
     },
@@ -28,7 +28,7 @@ const bannerData = [
   {
     "id": 2,
     "img": {
-      "width": 1900,
+      "width": 1800,
       "height": 600,
       "url": "/images/02.jpg"
     },
@@ -42,7 +42,7 @@ const bannerData = [
   {
     "id": 3,
     "img": {
-      "width": 1900,
+      "width": 1800,
       "height": 600,
       "url": "/images/03.jpg"
     },

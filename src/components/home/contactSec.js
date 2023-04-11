@@ -15,6 +15,8 @@ import InnerTitle from "../InnerTitle";
 
 
 const ContactBox = styled(Box)(({ theme }) => ({
+  width: '100%',
+  overflow: 'hidden',
   "& .card-box": {
     borderRadius: 0,
     border: '1px solid #e7e5e5',
@@ -135,13 +137,12 @@ const ContactSec = ({ locale }) => {
   return (
     <ContactBox mt={7} pt={7} pb={7}  position="relative" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom left' }}>
       <Container>
-        
         <Grid container spacing={3} >
           <Grid item xs={12} md={6}>
             <InnerTitle title="Contact Us" color="#000" />
             <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
               <Grid item xs={12} sm={12} md={12}>
-                <Box className="card-box">
+                <Box className="card-box" data-aos="fade-up">
                   <div className="card-img">
                     <Image src="/images/address.svg" alt="Address" width={50} height={50} />
                   </div>
@@ -159,7 +160,7 @@ const ContactSec = ({ locale }) => {
               </Grid>
 
               <Grid item xs={12} sm={6} md={6}>
-                <Box className="card-box">
+                <Box className="card-box" data-aos="fade-up">
                   <div className="card-img">
                     <Image src="/images/pb-box.svg" alt="Po-box" width={50} height={50} />
                   </div>
@@ -173,7 +174,7 @@ const ContactSec = ({ locale }) => {
               </Grid>
 
               <Grid item xs={12} sm={6} md={6}>
-                <Box className="card-box">
+                <Box className="card-box" data-aos="fade-up">
                   <div className="card-img">
                     <Image src="/images/phone.svg" alt="Phone" width={50} height={50} />
                   </div>
@@ -189,7 +190,7 @@ const ContactSec = ({ locale }) => {
               </Grid>
 
               <Grid item xs={12} sm={6} md={6}>
-                <Box className="card-box">
+                <Box className="card-box" data-aos="fade-up">
                   <div className="card-img">
                     <Image src="/images/email.svg" alt="Email" width={50} height={50} />
                   </div>
@@ -205,7 +206,7 @@ const ContactSec = ({ locale }) => {
               </Grid>
 
               <Grid item xs={12} sm={6} md={6}>
-                <Box className="card-box">
+                <Box className="card-box" data-aos="fade-up">
                   <div className="card-img">
                     <Image src="/images/fax.svg" alt="Fax" width={50} height={50} />
                   </div>

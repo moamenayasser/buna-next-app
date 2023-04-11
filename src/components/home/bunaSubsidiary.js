@@ -6,11 +6,11 @@ import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 // Component
 import { SideTitle } from "../SideTitle";
 import InnerTitle from "../InnerTitle";
+
 
 const CardBox = styled(Box)(({ theme }) => ({
   borderRadius: 0,
@@ -98,16 +98,16 @@ const subsidImg = [
 const BunaSubsidiary = () => {
 
   return (
-    <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative">
+    <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative" width="100%" overflow="hidden">
       <Container>
-        
+
         <InnerTitle title="BUNA SUBSIDIARIES" />
 
         <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
           {subsidImg?.map((item) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={item.id}>
               <Link href="/">
-                <CardBox>
+                <CardBox data-aos="fade-up">
                   <div className="card-img" style={{ marginTop: '15px', marginBottom: '20px' }}>
                     <Image
                       src={item.img}

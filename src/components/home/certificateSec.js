@@ -58,11 +58,11 @@ const CertificateSec = () => {
                     <figure>
                         <Image src={banner.src} alt="Certificate" fill style={{ objectFit: 'cover', transition: 'all 0.5s', }} />
                     </figure>
-                    <div className="caption">
+                    <div className="caption" >
                         <InnerTitle title="Certificate" color="#000" />
 
                         <Typography variant="body1" component="p" pb={6} color="#000">
-                            TAAM’s vision is brought to fruition by overcoming challenges and achieving incredible milestones. These certifications speak for our ethics, integrity, and dedication in the work we do.
+                            BUNA's vision is brought to fruition by overcoming challenges and achieving incredible milestones. These certifications speak for our ethics, integrity, and dedication in the work we do.
                         </Typography>
                         <GlobalBtn title="All Certificates" href="/" variant="outlined" />
                     </div>

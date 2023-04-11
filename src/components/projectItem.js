@@ -1,10 +1,10 @@
 // Internal Imports
 import Image from "next/image";
+import Link from "next/link";
 // MUI
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { styled } from "@mui/material";
-import Link from "next/link";
 
 
 const PorjectCard = styled(Box)(({ theme }) => ({
@@ -14,7 +14,6 @@ const PorjectCard = styled(Box)(({ theme }) => ({
     "& .project-media": {
         height: '400px',
         position: 'relative',
-
         "& img": {
             transition: 'all .5s',
             filter: 'brightness(100%)',
@@ -31,7 +30,6 @@ const PorjectCard = styled(Box)(({ theme }) => ({
         transition: '.2s cubic-bezier(.3, .58, .55, 1)',
         bottom: '-90px',
         position: 'relative',
-
         "& .project-title": {
             "&:hover": {
                 color: theme.palette.secondary.main
@@ -54,7 +52,6 @@ const PorjectCard = styled(Box)(({ theme }) => ({
             color: '#000',
             fontSize: '16px',
             fontWeight: 600,
-
             "&:before": {
                 content: '""',
                 position: 'absolute',
@@ -65,7 +62,6 @@ const PorjectCard = styled(Box)(({ theme }) => ({
                 backgroundColor: theme.palette.secondary.main,
                 transition: 'all ease 0.4s',
             },
-
             "&:hover": {
                 color: theme.palette.secondary.main,
                 "&:before": {

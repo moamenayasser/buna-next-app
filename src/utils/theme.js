@@ -60,7 +60,7 @@ const global = responsiveFontSizes(createTheme({
                     padding: "15px 40px",
                     borderRadius: 0,
                     transition: 'all 0.3s ease 0s',
-                    "@media screen and (max-width: 768px)": {
+                    "@media screen and (maxWidth: 768px)": {
                         padding: "10px 20px",
                         fontSize: 12,
                     },

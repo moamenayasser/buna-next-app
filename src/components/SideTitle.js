@@ -18,7 +18,7 @@ export const SideTitle = ({ title }) => {
         WebkitTextStrokeColor: '#10584b',
         opacity: '.1',
 
-        '@media and (max-width: 768px)': {
+        '@media and (maxWidth: 768px)': {
             display: 'none'
         }
     }

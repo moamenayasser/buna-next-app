@@ -15,12 +15,12 @@ import Loader from "@/components/Loader";
 import globalData from "@/utils/data.json";
 
 
-const Home = ({ data , locale}) => {
+const Home = ({ data, locale }) => {
   const { resources, home: { Banner, AboutSection } } = data;
   const { headerLinks, footerLinks, socialIcons } = globalData;
 
-  const [loading , setLoading] = useState(true);
-  useEffect(() => setLoading(false), [])
+  const [loading, setLoading] = useState(true);
+  useEffect(() =>  setLoading(false), [])
 
   if (loading) return <Loader />;
 
