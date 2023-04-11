@@ -37,7 +37,7 @@ const Home = ({ data, locale }) => {
         <main>
           <HomeSlider data={Banner} />
           <AboutSec data={AboutSection} />
-          <BunaSubsidiary />
+          <BunaSubsidiary locale={locale} />
           <ProjectSec locale={locale} />
           <CertificateSec />
           <ContactSec locale={locale} />

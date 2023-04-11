@@ -95,13 +95,12 @@ const subsidImg = [
   },
 ];
 
-const BunaSubsidiary = () => {
+const BunaSubsidiary = ({locale}) => {
 
   return (
     <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative" width="100%" overflow="hidden">
       <Container>
-
-        <InnerTitle title="BUNA SUBSIDIARIES" />
+        <InnerTitle title="BUNA SUBSIDIARIES" locale={locale} />
 
         <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
           {subsidImg?.map((item) => (
@@ -133,7 +132,7 @@ const BunaSubsidiary = () => {
           ))}
         </Grid>
       </Container>
-      <SideTitle title="Buna" />
+      <SideTitle title="Buna" locale={locale} />
     </Box>
   );
 };

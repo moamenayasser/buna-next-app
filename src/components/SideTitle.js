@@ -1,24 +1,25 @@
 
 
-export const SideTitle = ({ title }) => {
+export const SideTitle = ({ title , locale }) => {
     const style = {
         display: 'inline-block',
         fontSize: '10vw',
         lineHeight: '120px',
         fontWeight: 400,
-        transform: 'rotate(270deg)',
+        transform: locale === "en" ? 'rotate(270deg)' : 'rotate(90deg)',
         position: 'absolute',
-        right: '80px',
+        right: locale === "en" ? "50px" : "" ,
+        left: locale === "en" ? "" : "50px" ,
         top: 0,
         whiteSpace: 'nowrap',
-        transformOrigin: 'center right',
+        transformOrigin: locale === "en" ? "center right" : "center left",
         color: '#fff',
         WebkitTextFillColor: 'rgba(0,0,0,0)',
         WebkitTextStrokeWidth: '1px',
         WebkitTextStrokeColor: '#10584b',
         opacity: '.1',
 
-        '@media and (maxWidth: 768px)': {
+        "@media (maxWidth: 768px)": {
             display: 'none'
         }
     }
