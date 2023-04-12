@@ -24,12 +24,13 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
         style={{ marginBottom: "0.5rem" }}
         color="primary"
         component="form"
+        sx={{ "& input":{padding: '15px 10px'}}}
       >
         <FilledInput
           id="buna-news-letter"
           placeholder="Email Address"
           endAdornment={
-            <InputAdornment position="end" style={{ padding: 0}}>
+            <InputAdornment position="end">
               <IconButton
                 size="small"
                 aria-label="submit newsletter"
@@ -49,7 +50,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
             fontSize: "0.85rem",
             padding: '0px',
             backgroundColor: "#bfbfbf",
-            borderRadius: 0
+            borderRadius: 0,
           }}
         />
       </FormControl>
