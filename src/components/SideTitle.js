@@ -6,7 +6,7 @@ export const SideTitle = ({ title , locale }) => {
         fontSize: '10vw',
         lineHeight: '120px',
         fontWeight: 400,
-        transform: locale === "en" ? 'rotate(270deg)' : 'rotate(180deg)',
+        transform: locale === "en" ? 'rotate(270deg)' : 'rotate(90deg)',
         position: 'absolute',
         right: locale === "en" ? "50px" : "" ,
         left: locale === "en" ? "" : "50px" ,

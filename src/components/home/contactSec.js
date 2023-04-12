@@ -232,7 +232,7 @@ const ContactSec = ({ locale }) => {
         </Grid>
 
       </Container>
-      <SideTitle title="Contact" />
+      <SideTitle title="Contact" locale={locale} />
     </ContactBox>
   );
 };
