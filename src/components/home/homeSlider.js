@@ -13,11 +13,7 @@ import SliderItem from "../sliderItem";
 const bannerData = [
   {
     "id": 1,
-    "img": {
-      "width": 1800,
-      "height": 600,
-      "url": "/images/01.jpg"
-    },
+    "url": "/images/01.jpg",
     "desc_ar": " العماره الداخليه واهميتها  العماره الداخليه واهميتها .",
     "desc_en": " Inoterior design consultancy firm that brings sensitivity to the design top restaurants.",
     "title_ar": "العماره الداخليه واهميتها ",
@@ -27,11 +23,7 @@ const bannerData = [
   },
   {
     "id": 2,
-    "img": {
-      "width": 1800,
-      "height": 600,
-      "url": "/images/02.jpg"
-    },
+    "url": "/images/02.jpg",
     "desc_ar": " العماره الداخليه واهميتها  العماره الداخليه واهميتها .",
     "desc_en": " Inoterior design consultancy firm that brings sensitivity to the design top restaurants.",
     "title_ar": "العماره الداخليه واهميتها ",
@@ -41,11 +33,7 @@ const bannerData = [
   },
   {
     "id": 3,
-    "img": {
-      "width": 1800,
-      "height": 600,
-      "url": "/images/03.jpg"
-    },
+    "url": "/images/03.jpg",
     "desc_ar": " العماره الداخليه واهميتها  العماره الداخليه واهميتها .",
     "desc_en": " Inoterior design consultancy firm that brings sensitivity to the design top restaurants.",
     "title_ar": "العماره الداخليه واهميتها ",

@@ -52,10 +52,10 @@ const SliderItem = ({ item }) => {
   return (
     <>
       <Image
-        src={item.img.url}
+        src={item.url}
         alt={item.title_en}
-        width={item.img.width}
-        height={item.img.height}
+        width={1800}
+        height={800}
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
       <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
