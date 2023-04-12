@@ -18,10 +18,6 @@ export const SideTitle = ({ title , locale }) => {
         WebkitTextStrokeWidth: '1px',
         WebkitTextStrokeColor: '#10584b',
         opacity: '.1',
-
-        '@media and (maxWidth: 768px)': {
-            display: 'none'
-        }
     }
 
     return (

@@ -133,6 +133,9 @@ a {
   .swiper-button-next:after, .swiper-button-prev:after{
     font-size: 20px !important
   }
+  .side-title{
+    display: none;
+  }
 }
 
 /* New Swiper Navigation*/
