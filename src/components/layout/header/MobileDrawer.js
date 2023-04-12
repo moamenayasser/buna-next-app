@@ -78,7 +78,7 @@ const MobileDrawer = (props) => {
         sx={{ display: { md: "none" } }}
         onClick={toggleDrawer}
       >
-        <MenuIcon style={{ fontSize: "2rem" }} color="#fff" />
+        <MenuIcon style={{ fontSize: "2rem" , color: "#fff"}} />
       </IconButton>
 
       <Drawer anchor="left" open={open} onClose={toggleDrawer}>

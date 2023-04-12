@@ -16,7 +16,7 @@ const LangSwitch = (props) => {
     <Link
       href={`/${newLocale}${asPath}`}
       underline="none"
-      color="#fff"
+      color="inherit"
       fontFamily={
         locale === "ar"
           ? benton_en_font.style.fontFamily

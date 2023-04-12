@@ -62,7 +62,7 @@ const SliderItem = ({ item }) => {
         priority
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
-      <Container fluid>
+      <Container fixed>
         <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
           <div className="content">
             <Typography component="h1" variant="h1">
@@ -72,7 +72,7 @@ const SliderItem = ({ item }) => {
               {item.desc_en}
             </Typography>
             <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={4}>
-              <Button component={Link} href="/" variant="contained" color="primary">
+              <Button component={Link} href="/" variant="contained">
                 About us
               </Button>
             </Stack>
