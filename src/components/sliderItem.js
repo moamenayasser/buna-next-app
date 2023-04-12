@@ -15,7 +15,6 @@ const BoxStyle = styled(Box)(({ theme }) => ({
   top: "0",
   display: 'flex',
   alignItems: "center",
-  padding: "0 30px",
   "& .content": {
     position: 'relative',
     padding: '30px',
@@ -34,8 +33,10 @@ const BoxStyle = styled(Box)(({ theme }) => ({
       backgroundColor: theme.palette.secondary.main,
     },
   },
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('lg')]: {
     padding: "0 50px",
+  },
+  [theme.breakpoints.down('md')]: {
     "& .description": {
       display: 'none',
     },
@@ -61,7 +62,7 @@ const SliderItem = ({ item }) => {
         priority
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
-      <Container>
+      <Container fluid>
         <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
           <div className="content">
             <Typography component="h1" variant="h1">
