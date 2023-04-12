@@ -122,6 +122,41 @@ a {
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
+
+@media screen and (min-width: 768px) {
+  /* New Swiper Navigation*/
+  [dir = 'ltr'] .newSwiper .swiper-button-next{
+  right: -50px;
+    left:auto
+  }
+  [dir='ltr'] .newSwiper .swiper-button-prev{
+    left: -50px;
+    right:auto
+  }
+  [dir = 'ltr'] .newSwiper:hover .swiper-button-next{
+    right: 0;
+  }
+  [dir = 'ltr'] .newSwiper:hover .swiper-button-prev{
+    left: 0;
+  }
+  /* Rtl Swiper Navigation */
+  [dir = 'rtl'] .newSwiper .swiper-button-prev{
+    right: -50px;
+    left: auto;
+  }
+  [dir = 'rtl'] .newSwiper .swiper-button-next{
+    left: -50px;
+    right: auto;
+  }
+  [dir = 'rtl'] .newSwiper:hover .swiper-button-prev{
+    right: 0;
+    left: auto;
+  }
+  [dir = 'rtl'] .newSwiper:hover .swiper-button-next{
+    left: 0;
+    right: auto;
+  }
+}
 @media screen and (max-width: 768px){
   .main-slider{
     height: 500px;
@@ -136,39 +171,6 @@ a {
   .side-title{
     display: none;
   }
-}
-
-/* New Swiper Navigation*/
-[dir = 'ltr'] .newSwiper .swiper-button-next{
-right: -50px;
-  left:auto
-}
-[dir='ltr'] .newSwiper .swiper-button-prev{
-  left: -50px;
-  right:auto
-}
-[dir = 'ltr'] .newSwiper:hover .swiper-button-next{
-  right: 0;
-}
-[dir = 'ltr'] .newSwiper:hover .swiper-button-prev{
-  left: 0;
-}
-/* Rtl Swiper Navigation */
-[dir = 'rtl'] .newSwiper .swiper-button-prev{
-  right: -50px;
-  left: auto;
-}
-[dir = 'rtl'] .newSwiper .swiper-button-next{
-  left: -50px;
-  right: auto;
-}
-[dir = 'rtl'] .newSwiper:hover .swiper-button-prev{
-  right: 0;
-  left: auto;
-}
-[dir = 'rtl'] .newSwiper:hover .swiper-button-next{
-  left: 0;
-  right: auto;
 }
 
 /* Start Animations */
@@ -225,7 +227,6 @@ right: -50px;
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
-
 @keyframes cssload-fold-thecube {
 	0%, 10% {
 		transform: perspective(136px) rotateX(-180deg);
