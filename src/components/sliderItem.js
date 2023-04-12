@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 // MUI
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import { styled, Typography } from "@mui/material";
+import { styled } from "@mui/material";
 
 
 const BoxStyle = styled(Box)(({ theme }) => ({
@@ -13,7 +15,7 @@ const BoxStyle = styled(Box)(({ theme }) => ({
   top: "0",
   display: 'flex',
   alignItems: "center",
-  padding: "0 10%",
+  padding: "0 30px",
   "& .content": {
     position: 'relative',
     padding: '30px',
@@ -32,15 +34,15 @@ const BoxStyle = styled(Box)(({ theme }) => ({
       backgroundColor: theme.palette.secondary.main,
     },
   },
-  [theme.breakpoints.down('md')]:{
+  [theme.breakpoints.down('md')]: {
     padding: "0 50px",
-    "& .description":{
+    "& .description": {
       display: 'none',
     },
-    '& .content':{
+    '& .content': {
       width: 'calc(100vw - 45%)',
       padding: '15px',
-      "&:before":{
+      "&:before": {
         display: 'none'
       }
     }
@@ -56,23 +58,26 @@ const SliderItem = ({ item }) => {
         alt={item.title_en}
         width={1800}
         height={800}
+        priority
         style={{ width: "100%", height: "100%", objectFit: "cover" }}
       />
-      <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
-        <div className="content">
-          <Typography component="h1" variant="h1">
-            {item.title_en}
-          </Typography>
-          <Typography component="p" variant="body1" className="description">
-            {item.desc_en}
-          </Typography>
-          <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={4}>
-            <Button component={Link} href="/" variant="contained" color="primary">
-              About us
-            </Button>
-          </Stack>
-        </div>
-      </BoxStyle>
+      <Container>
+        <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
+          <div className="content">
+            <Typography component="h1" variant="h1">
+              {item.title_en}
+            </Typography>
+            <Typography component="p" variant="body1" className="description">
+              {item.desc_en}
+            </Typography>
+            <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={4}>
+              <Button component={Link} href="/" variant="contained" color="primary">
+                About us
+              </Button>
+            </Stack>
+          </div>
+        </BoxStyle>
+      </Container>
     </>
   );
 };
