@@ -111,6 +111,7 @@ const AboutSec = () => {
                   height={500}
                   alt="complex"
                   src="/images/aboutSec.jpg"
+                  priority
                   style={{ objectFit: 'cover'}}
                 />
               </div>
