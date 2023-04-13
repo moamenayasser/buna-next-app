@@ -68,13 +68,11 @@ const AboutSec = () => {
   return (
     <Box pt={10} pb={10}>
       <Container>
-        <Grid container spacing={3} display='flex' alignItems="center">
+        <Grid container spacing={3} display='flex'>
           <Grid item xs={12} md={6}>
-            <InnerTitle title="Who we are" align="left" />
+            <InnerTitle title="Why Buna?" align="left" />
             <p>
-              BUNA is a Leading General Contractor & Construction Management
-              Services Organization in Saudi Arabia & a subsidiary of SUMOU
-              Holding.
+            Specializing in mixed use and high-rise buildings, BUNA’s visionary team of highly professional engineers and experts provide long-term, cost-effective and efficient solutions to clients, meeting all safety and quality requirements. Equipped with top quality modern technology, led by the highest of calibers in the market.
             </p>
             <h4 className="inner-subtitle">
               BUNA Subsidiaries are:

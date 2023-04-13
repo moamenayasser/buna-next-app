@@ -37,11 +37,9 @@ const CardBox = styled(Box)(({ theme }) => ({
     bottom: 0,
     right: 0
   },
-
   "&:hover": {
     animation: 'jump1 5s linear infinite',
     backgroundColor: '#fff',
-
     "&:before , &:after": {
       width: '100%',
       height: '100%',
@@ -57,7 +55,6 @@ const CardBox = styled(Box)(({ theme }) => ({
       borderLeftColor: theme.palette.secondary.main,
     },
   },
-
   "& .card-img": {
     position: 'relative',
     width: '200px',
@@ -73,25 +70,25 @@ const subsidImg = [
     id: 1,
     img: "/images/align-management.png",
     name: "Alignment Management",
-    desc: "Design & Build specialized contractor, With several divisions"
+    desc: "Managing all aspects from conceptual design and planning"
   },
   {
     id: 2,
     img: "/images/TAAM Logo.svg",
     name: "Taam Group",
-    desc: "Design & Build specialized contractor, With several divisions"
+    desc: "Leading general contractor specializing in commercial and residential projects"
   },
   {
     id: 3,
     img: "/images/dac.png",
     name: "Dac Group",
-    desc: "Design & Build specialized contractor, With several divisions"
+    desc: "Leading specialized design and build contractor using modern technology"
   },
   {
     id: 4,
-    img: "/images/BUNA-LOGO-black.png",
-    name: "Buna Group",
-    desc: "Design & Build specialized contractor, With several divisions"
+    img: "/images/bct.png",
+    name: "BCT Contracting",
+    desc: "Specialized general contractor for high-rise buildings and mixed-use projects"
   },
 ];
 

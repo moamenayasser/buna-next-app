@@ -9,7 +9,6 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material";
 
-
 const BoxStyle = styled(Box)(({ theme }) => ({
   position: "absolute",
   top: "0",
@@ -65,7 +64,7 @@ const SliderItem = ({ item }) => {
       <Container fixed>
         <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
           <div className="content">
-            <Typography component="h1" variant="h1">
+            <Typography component="h1" variant="h1" mb={3}>
               {item.title_en}
             </Typography>
             <Typography component="p" variant="body1" className="description">
@@ -73,7 +72,7 @@ const SliderItem = ({ item }) => {
             </Typography>
             <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={4}>
               <Button component={Link} href="/" variant="contained">
-                About us
+                View Projects
               </Button>
             </Stack>
           </div>

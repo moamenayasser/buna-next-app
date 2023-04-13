@@ -12,7 +12,7 @@ const UtilitySection = (props) => {
 
   return (
     <Stack direction="row" alignItems="center" gap={2}>
-      <Button variant="outlined" sx={{ display: { xs: "none", md: "flex" } }} >
+      <Button variant="outlined" sx={{ display: { xs: "none", md: "flex" }, padding: "5px 15px" }} >
         <LangSwitch locale={locale}>
           <LanguageIcon sx={{ ml: 1 }} />
         </LangSwitch>
