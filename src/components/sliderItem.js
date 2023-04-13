@@ -67,7 +67,7 @@ const SliderItem = ({ item }) => {
             <Typography component="h1" variant="h1" mb={3}>
               {item.title_en}
             </Typography>
-            <Typography component="p" variant="body1" className="description">
+            <Typography component="p" variant="body1" className="description" fontWeight={600}>
               {item.desc_en}
             </Typography>
             <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={4}>
