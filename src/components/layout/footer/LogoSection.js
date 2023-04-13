@@ -50,8 +50,8 @@ const LogoSection = () => {
       <Stack display="inline">
           <Link href="/">
             <Image
-              src="/images/clients/sumou.png"
-              alt="Buna Logo"
+              src="/images/clients/sumou-w.jpg"
+              alt="Sumou Logo"
               width={100}
               height={60}
               style={{ maxWidth: "100%", objectFit:'contain', margin: '5px' }}
