@@ -11,15 +11,14 @@ import Typography from '@mui/material/Typography';
 import { SideTitle } from "../SideTitle";
 import InnerTitle from "../InnerTitle";
 
-
 const CardBox = styled(Box)(({ theme }) => ({
   borderRadius: 0,
   border: '1px solid #e7e5e5',
   textAlign: 'center',
   padding: '10px',
+  height: '100%',
   position: 'relative',
   boxShadow: '1px 5px 5px #eee',
-
   "&:before , &:after": {
     boxSizing: 'inherit',
     zIndex: '-1',

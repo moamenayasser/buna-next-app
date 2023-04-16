@@ -20,16 +20,19 @@ const projectsData = [
         id: 1,
         img: "/images/tower.jpg",
         name: "SUMOU TOWER",
+        desc: "A high-rise mixed-use project consists of two towers."
     },
     {
         id: 2,
         img: "/images/gate.jpg",
         name: "SUMOU GATE",
+        desc: "The project aims to attract guests interested in visiting Madinah and Almasjid Alnabawy by providing a premium service and delivering memorable experience"
     },
     {
         id: 3,
         img: "/images/bark.jpg",
         name: "SUMOU PARK",
+        desc: "The project land was originally used as a club for the youth that contains different play grounds for different sports"
     },
 ];
 

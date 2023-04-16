@@ -79,20 +79,16 @@ const AboutSec = () => {
             </h4>
             <ul className="inner-list">
               <li>
-                <span>BCT Contracting:</span>
-                Specialized in mixed use, high-rise buildings, and special projects.
+                <span>BCT Contracting</span>
               </li>
               <li>
-                <span>ALIGN Management:</span>
-                BUNA construction management arm.
+                <span>ALIGN Management</span>
               </li>
               <li>
-                <span>TAAM:</span>
-                Industrial & Commercial general contractor.
+                <span>TAAM</span>
               </li>
               <li>
-                <span>DAC Group:</span>
-                Design & Build specialized contractor With several divisions.
+                <span>DAC Group</span>
               </li>
             </ul>
 

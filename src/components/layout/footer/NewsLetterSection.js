@@ -46,10 +46,11 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
             </InputAdornment>
           }
           style={{
-            color: "#000",
+            color: "#fff",
             fontSize: "0.85rem",
             padding: '0px',
-            backgroundColor: "#bfbfbf",
+            backgroundColor: "#ffffff21",
+            border: '1px solid #0b594f',
             borderRadius: 0,
           }}
         />

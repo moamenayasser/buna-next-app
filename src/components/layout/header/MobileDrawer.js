@@ -81,7 +81,7 @@ const MobileDrawer = (props) => {
         <MenuIcon style={{ fontSize: "2rem" , color: "#fff"}} />
       </IconButton>
 
-      <Drawer anchor="left" open={open} onClose={toggleDrawer}>
+      <Drawer anchor="left"  sx={{ width: "65%" , "& .MuiDrawer-paper":{width: '65%'}}} open={open} onClose={toggleDrawer}>
         <DrawerHeaderStyle>
           <NextActiveLink
             href="/"

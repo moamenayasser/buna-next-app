@@ -50,8 +50,8 @@ const PorjectCard = styled(Box)(({ theme }) => ({
             marginBottom: '-1px',
             borderBottom: '1px solid #0000004a',
             color: '#000',
-            fontSize: '16px',
-            fontWeight: 600,
+            fontSize: '15px',
+            fontWeight: 400,
             "&:before": {
                 content: '""',
                 position: 'absolute',
@@ -93,6 +93,7 @@ const ProjectItem = ({item}) => {
                     <Typography component="h5" variant="h4" className="project-title">{item.name}</Typography>
                 </Link>
                 <div className="divider"></div>
+                <Typography component="p" variant="body1" truncate={2} mb={1}>{item.desc}</Typography>
                 <Link href="/" className="link-btn">
                     Read More
                 </Link>
