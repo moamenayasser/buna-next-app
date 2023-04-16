@@ -79,9 +79,6 @@ const AboutSec = () => {
             </h4>
             <ul className="inner-list">
               <li>
-                <span>BCT Contracting</span>
-              </li>
-              <li>
                 <span>ALIGN Management</span>
               </li>
               <li>
@@ -89,6 +86,9 @@ const AboutSec = () => {
               </li>
               <li>
                 <span>DAC Group</span>
+              </li>
+              <li>
+                <span>BCT Contracting</span>
               </li>
             </ul>
 

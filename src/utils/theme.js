@@ -103,7 +103,7 @@ const global = responsiveFontSizes(createTheme({
                     color: "#000",
                     backgroundColor: "#fff",
                     boxShadow: "unset",
-                    border: "2px solid #000",
+                    border: "2px solid #fff",
                     zIndex: 1,
                     position: "relative",
                     overflow: "hidden",
