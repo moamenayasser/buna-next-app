@@ -68,19 +68,19 @@ const subsidImg = [
   {
     id: 1,
     img: "/images/align-management.png",
-    name: "Alignment Management",
+    name: "Align Management",
     desc: "Managing all aspects from conceptual design and planning"
   },
   {
     id: 2,
     img: "/images/TAAM Logo.svg",
-    name: "Taam Group",
+    name: "TAAM Group",
     desc: "Leading general contractor specializing in commercial and residential projects"
   },
   {
     id: 3,
     img: "/images/dac.png",
-    name: "Dac Group",
+    name: "DAC Group",
     desc: "Leading specialized design and build contractor using modern technology"
   },
   {

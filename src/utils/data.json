@@ -156,26 +156,26 @@
       "links": [
         {
           "id": 1,
-          "title_en": "ALIGN Management",
-          "title_ar": " ALIGN Management",
+          "title_en": "Align Management",
+          "title_ar": " Align Management",
           "href": "/"
         },
         {
           "id": 2,
-          "title_en": "Taam Group",
-          "title_ar": "Taam Group ",
+          "title_en": "TAAM Group",
+          "title_ar": "TAAM Group",
           "href": "/"
         },
         {
           "id": 3,
           "title_en": "DAC Group",
-          "title_ar": "DAC Group ",
+          "title_ar": "DAC Group",
           "href": "/"
         },
         {
           "id": 4,
           "title_en": "BCT Contracting",
-          "title_ar": "BCT Contracting ",
+          "title_ar": "BCT Contracting",
           "href": "/"
         }
       ]
