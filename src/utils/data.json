@@ -4,7 +4,7 @@
       "id": 1,
       "label_en": "about us",
       "label_ar": "معلومات عنا",
-      "href": "/",
+      "href": "/about",
       "hasDropdown": false,
       "dropdownLinks": []
     },
