@@ -17,24 +17,24 @@
       "dropdownLinks": [
         {
           "id": 1,
-          "label_en": "ALIGN",
-          "label_ar": "ALIGN",
+          "label_en": "Align Management",
+          "label_ar": "Align Management",
           "href": "/",
           "hasDropdown": false,
           "dropdownLinks": []
         },
         {
           "id": 2,
-          "label_en": "BCT",
-          "label_ar": "BCT",
+          "label_en": "BCT Contracting",
+          "label_ar": "BCT Contracting",
           "href": "/",
           "hasDropdown": false,
           "dropdownLinks": []
         },
         {
           "id": 3,
-          "label_en": "TAAM",
-          "label_ar": "TAAM",
+          "label_en": "TAAM Group",
+          "label_ar": "TAAM Group",
           "href": "/",
           "hasDropdown": false,
           "dropdownLinks": []
