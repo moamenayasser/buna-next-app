@@ -73,21 +73,21 @@ const subsidImg = [
   },
   {
     id: 2,
+    img: "/images/bct.png",
+    name: "BCT Contracting",
+    desc: "Specialized general contractor for high-rise buildings and mixed-use projects"
+  },
+  {
+    id: 3,
     img: "/images/TAAM Logo.svg",
     name: "TAAM Group",
     desc: "Leading general contractor specializing in commercial and residential projects"
   },
   {
-    id: 3,
+    id: 4,
     img: "/images/dac.png",
     name: "DAC Group",
     desc: "Leading specialized design and build contractor using modern technology"
-  },
-  {
-    id: 4,
-    img: "/images/bct.png",
-    name: "BCT Contracting",
-    desc: "Specialized general contractor for high-rise buildings and mixed-use projects"
   },
 ];
 

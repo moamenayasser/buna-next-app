@@ -135,7 +135,8 @@ const ContactBox = styled(Box)(({ theme }) => ({
 
 const ContactSec = ({ locale }) => {
   return (
-    <ContactBox mt={7} pt={7} pb={7}  position="relative" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom left' }}>
+    // <ContactBox mt={7} pt={7} pb={7}  position="relative" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom left' }}>
+      <ContactBox mt={7} pt={7} pb={7}  position="relative">
       <Container>
         <Grid container spacing={3} >
           <Grid item xs={12} md={6}>

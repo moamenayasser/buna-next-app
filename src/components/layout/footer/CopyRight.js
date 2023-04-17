@@ -7,7 +7,7 @@ import Link from "@mui/material/Link";
 
 const CopyRight = () => {
   return (
-    <Box bgcolor="common.black" color="common.white" py={2}>
+    <Box bgcolor="#000000e6" color="common.white" py={1}>
       <Container>
         <Stack
           direction={{ md: "row" }}

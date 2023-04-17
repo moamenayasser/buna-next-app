@@ -1,6 +1,7 @@
 // Internal Imports
 import Image from "next/image";
 import Link from "next/link";
+import {useRouter} from 'next/router';
 // MUI
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -51,6 +52,9 @@ const BoxStyle = styled(Box)(({ theme }) => ({
 
 
 const SliderItem = ({ item }) => {
+  const router = useRouter();
+  const {locale} = router;
+
   return (
     <>
       <Image
@@ -65,10 +69,10 @@ const SliderItem = ({ item }) => {
         <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
           <div className="content">
             <Typography component="h1" variant="h1" mb={3}>
-              {item.title_en}
+              {item[`title_${locale}`]}
             </Typography>
             <Typography component="p" variant="body1" className="description" fontWeight={600}>
-              {item.desc_en}
+              {item[`desc_${locale}`]}
             </Typography>
             <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={4}>
               <Button component={Link} href="/" variant="contained">

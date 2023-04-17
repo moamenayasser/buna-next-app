@@ -16,30 +16,30 @@ const bannerData = [
     "url": "/images/01.jpg",
     "desc_ar": "مقاول عام رائد ومنظمة خدمات إدارة البناء ،وإحدى شركات سمو القابضة",
     "desc_en": "A leading general contractor and construction management services organization, and a subsidiary of Sumou Holding",
-    "title_ar": "بونا | البناء في جبهة جديدة",
-    "title_en": "BUNA | CONSTRUCTION INTO A NEW FRONTIER",
-    "subTitle_ar": "بونا | البناء في جبهة جديدة",
-    "subTitle_en": "BUNA | CONSTRUCTION INTO A NEW FRONTIER"
+    "title_ar": "بوناالبناء في جبهة جديدة",
+    "title_en": "BUNA CONSTRUCTION INTO A NEW FRONTIER",
+    "subTitle_ar": "بوناالبناء في جبهة جديدة",
+    "subTitle_en": "BUNA CONSTRUCTION INTO A NEW FRONTIER"
   },
   {
     "id": 2,
     "url": "/images/02.jpg",
     "desc_ar": "مقاول عام رائد ومنظمة خدمات إدارة البناء ،وإحدى شركات سمو القابضة",
     "desc_en": "A leading general contractor and construction management services organization, and a subsidiary of Sumou Holding",
-    "title_ar": "بونا | البناء في جبهة جديدة",
-    "title_en": "BUNA | CONSTRUCTION INTO A NEW FRONTIER",
-    "subTitle_ar": "بونا | البناء في جبهة جديدة",
-    "subTitle_en": "BUNA | CONSTRUCTION INTO A NEW FRONTIER"
+    "title_ar": "بوناالبناء في جبهة جديدة",
+    "title_en": "BUNA CONSTRUCTION INTO A NEW FRONTIER",
+    "subTitle_ar": "بوناالبناء في جبهة جديدة",
+    "subTitle_en": "BUNA CONSTRUCTION INTO A NEW FRONTIER"
   },
   {
     "id": 3,
     "url": "/images/03.jpg",
     "desc_ar": "مقاول عام رائد ومنظمة خدمات إدارة البناء ،وإحدى شركات سمو القابضة",
     "desc_en": "A leading general contractor and construction management services organization, and a subsidiary of Sumou Holding",
-    "title_ar": "بونا | البناء في جبهة جديدة",
-    "title_en": "BUNA | CONSTRUCTION INTO A NEW FRONTIER",
-    "subTitle_ar": "بونا | البناء في جبهة جديدة",
-    "subTitle_en": "BUNA | CONSTRUCTION INTO A NEW FRONTIER"
+    "title_ar": "بوناالبناء في جبهة جديدة",
+    "title_en": "BUNA CONSTRUCTION INTO A NEW FRONTIER",
+    "subTitle_ar": "بوناالبناء في جبهة جديدة",
+    "subTitle_en": "BUNA CONSTRUCTION INTO A NEW FRONTIER"
   }
 ]
 

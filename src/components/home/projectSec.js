@@ -64,7 +64,7 @@ const ProjectSec = ({ locale }) => {
     }
 
     return (
-        <Box pt={10} pb={10} className="project-setion" sx={{ backgroundImage: `url(${dots.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'bottom right' }}>
+        <Box pt={10} pb={10} className="project-setion">
             <Container>
                 <InnerTitle title="Featured Projects" align="left" />
 

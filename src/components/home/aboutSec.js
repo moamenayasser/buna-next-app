@@ -82,13 +82,13 @@ const AboutSec = () => {
                 <span>ALIGN Management</span>
               </li>
               <li>
-                <span>TAAM</span>
+                <span>BCT Contracting</span>
+              </li>
+              <li>
+                <span>TAAM Group</span>
               </li>
               <li>
                 <span>DAC Group</span>
-              </li>
-              <li>
-                <span>BCT Contracting</span>
               </li>
             </ul>
 
