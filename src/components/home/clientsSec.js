@@ -92,7 +92,7 @@ const ClientsSec = ({ locale }) => {
                 }}>
                     <Typography component="h1" variant="h2" py={1}>Key Clients</Typography>
                 </Stack>
-                <Typography component="p" variant="body1" sx={{ maxWidth: '60%', margin: 'auto'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</Typography>
+                <Typography component="p" variant="body1" sx={{ maxWidth: '60%', margin: 'auto' }}>We are proud of our track record of success and our reputation in the industry. We are dedicated to providing exceptional service to our clients and delivering projects that are of the highest quality. </Typography>
             </div>
 
             <Box pt={5} pb={2} bgcolor="#fff" position="relative" zIndex={9} margin="0 auto 0px" sx={{
