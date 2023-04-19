@@ -68,13 +68,13 @@ const SliderItem = ({ item }) => {
       <Container fixed>
         <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
           <div className="content">
-            <Typography component="h1" variant="h3" mb={3}>
+            <Typography component="h1" variant="h3" mb={2}>
               <span style={{ fontSize: '40px' }}>BUNA</span> <br /> Construction Into A New Frontier
             </Typography>
             <Typography component="p" variant="body1" className="description" fontWeight={600}>
               {item[`desc_${locale}`]}
             </Typography>
-            <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={4}>
+            <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={2}>
               <Button component={Link} href="/" variant="contained">
                 View Projects
               </Button>
