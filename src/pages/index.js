@@ -1,21 +1,46 @@
 // Internal Imports
+import { useEffect, useState } from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 // Components
 import Layout from "@/components/layout/Layout";
 import AboutSec from "@/components/home/aboutSec";
 import HomeSlider from "@/components/home/homeSlider";
-import BunaSubsidiary from "@/components/home/bunaSubsidiary";
-import ProjectSec from "@/components/home/projectSec";
-import ClientsSec from "@/components/home/clientsSec";
-import CertificateSec from "@/components/home/certificateSec";
+import Loader from "@/components/Loader";
 // Data
 import globalData from "@/utils/data.json";
-import ContactSec from "@/components/home/contactSec";
 
 
-const Home = ({ data , locale}) => {
+const DynamicBunaSubsidiary = dynamic(() =>  import('@/components/home/bunaSubsidiary'),{
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
+const DynamicProjectSec = dynamic(() =>  import('@/components/home/projectSec'),{
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
+const DynamicCertificateSec = dynamic(() =>  import('@/components/home/certificateSec'),{
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
+const DynamicContactSec = dynamic(() =>  import('@/components/home/contactSec'),{
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
+const DynamicClientsSec = dynamic(() =>  import('@/components/home/clientsSec'),{
+  loading: () => <p>Loading...</p>,
+  ssr: false,
+});
+
+
+const Home = ({ data, locale }) => {
   const { resources, home: { Banner, AboutSection } } = data;
   const { headerLinks, footerLinks, socialIcons } = globalData;
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() =>  setLoading(false), [])
+
+  if (loading) return <Loader />;
 
   return (
     <>
@@ -30,11 +55,11 @@ const Home = ({ data , locale}) => {
         <main>
           <HomeSlider data={Banner} />
           <AboutSec data={AboutSection} />
-          <BunaSubsidiary />
-          <ProjectSec locale={locale} />
-          <CertificateSec />
-          <ContactSec locale={locale} />
-          <ClientsSec locale={locale} />
+          <DynamicBunaSubsidiary locale={locale} />
+          <DynamicProjectSec locale={locale} />
+          <DynamicCertificateSec />
+          <DynamicContactSec locale={locale} />
+          <DynamicClientsSec locale={locale} />
         </main>
       </Layout>
     </>

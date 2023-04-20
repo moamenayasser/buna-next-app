@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 
-const InnerTitle = ({ title , color}) => {
+const InnerTitle = ({ title , color , locale }) => {
     return (
         <Stack mb={3} position="relative" sx={{
             "&:before": {

@@ -27,7 +27,7 @@ const global = responsiveFontSizes(createTheme({
         h1: {
             fontWeight: 600,
             textTransform: "uppercase",
-            fontSize: '3.8rem',
+            fontSize: '2.6rem',
         },
         h2: {
             textTransform: "uppercase",
@@ -60,7 +60,7 @@ const global = responsiveFontSizes(createTheme({
                     padding: "15px 40px",
                     borderRadius: 0,
                     transition: 'all 0.3s ease 0s',
-                    "@media screen and (max-width: 768px)": {
+                    "@media screen and (maxWidth: 768px)": {
                         padding: "10px 20px",
                         fontSize: 12,
                     },
@@ -70,25 +70,32 @@ const global = responsiveFontSizes(createTheme({
                     backgroundColor: "#000",
                     boxShadow: "unset",
                     border: "2px solid #000",
-
-                    "&:after": {
-                        width: 0,
+                    zIndex: 1,
+                    position: "relative",
+                    overflow: "hidden",
+                    
+                    "&::after": {
+                        width: '100%',
                         height: '100%',
                         top: 0,
                         left: 0,
                         background: '#fff',
                         content: '""',
+                        zIndex: '-1',
+                        transform: 'translateY(110%)',
+                        transition: '0.2s linear',
+                        transitionDelay: '0.1s',
                         display: 'block',
                         position: 'absolute',
-                        transition: 'all 0.3s',
                     },
 
                     "&:hover": {
-                        color: '#000 !important',
+                        color: '#000',
                         boxShadow: "unset",
+                        transition: '0.2s linear',
 
-                        "&:after": {
-                            width: '100%',
+                        "&::after": {
+                            transform: 'translateY(0)',
                         }
                     },
                 },
@@ -96,32 +103,46 @@ const global = responsiveFontSizes(createTheme({
                     color: "#000",
                     backgroundColor: "#fff",
                     boxShadow: "unset",
-                    border: "2px solid #000",
-
-                    "&:after": {
-                        width: 0,
+                    border: "2px solid #fff",
+                    zIndex: 1,
+                    position: "relative",
+                    overflow: "hidden",
+                    
+                    "&::after": {
+                        width: '100%',
                         height: '100%',
                         top: 0,
                         left: 0,
                         background: '#000',
                         content: '""',
+                        zIndex: '-1',
+                        transform: 'translateY(110%)',
+                        transition: '0.2s linear',
+                        transitionDelay: '0.1s',
                         display: 'block',
                         position: 'absolute',
-                        transition: 'all 0.3s',
                     },
 
                     "&:hover": {
-                        color: '#fff !important',
+                        color: '#fff',
                         boxShadow: "unset",
-                        border: "2px solid #000",
+                        transition: '0.2s linear',
+                        border: "2px solid #fff",
 
-                        "&:after": {
-                            width: '100%',
+                        "&::after": {
+                            transform: 'translateY(0)',
                         }
                     },
                 },
             },
         },
+        MuiTouchRipple: {
+            styleOverrides: {
+                root: {
+                    display: 'none',
+                }
+            }
+        }
     }
 }));
 

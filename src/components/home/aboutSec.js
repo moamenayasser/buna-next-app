@@ -47,12 +47,19 @@ const ImageContainer = styled(Box)(({ theme }) => ({
       maxWidth: '100%',
 
       "&:after": {
-        display: 'none',
+        left: '10px',
       }
     },
     "& .thumbnail2": {
       display: 'none',
     }
+  },
+  [theme.breakpoints.down('sm')]: {
+    "& .thumbnail1": {
+      "&:after": {
+        display: 'none',
+      }
+    },
   }
 }));
 
@@ -61,33 +68,27 @@ const AboutSec = () => {
   return (
     <Box pt={10} pb={10}>
       <Container>
-        <Grid container spacing={3} display='flex' alignItems="center">
+        <Grid container spacing={3} display='flex'>
           <Grid item xs={12} md={6}>
-            <InnerTitle title="Who we are" align="left" />
+            <InnerTitle title="Why Buna?" align="left" />
             <p>
-              BUNA is a Leading General Contractor & Construction Management
-              Services Organization in Saudi Arabia & a subsidiary of SUMOU
-              Holding.
+            Specializing in mixed use and high-rise buildings, BUNA’s visionary team of highly professional engineers and experts provide long-term, cost-effective and efficient solutions to clients, meeting all safety and quality requirements. Equipped with top quality modern technology, led by the highest of calibers in the market.
             </p>
             <h4 className="inner-subtitle">
               BUNA Subsidiaries are:
             </h4>
             <ul className="inner-list">
               <li>
-                <span>BCT Contracting:</span>
-                Specialized in mixed use, high-rise buildings, and special projects.
+                <span>ALIGN Management</span>
               </li>
               <li>
-                <span>ALIGN Management:</span>
-                BUNA construction management arm.
+                <span>TAAM</span>
               </li>
               <li>
-                <span>TAAM:</span>
-                Industrial & Commercial general contractor.
+                <span>DAC Group</span>
               </li>
               <li>
-                <span>DAC Group:</span>
-                Design & Build specialized contractor With several divisions.
+                <span>BCT Contracting</span>
               </li>
             </ul>
 
@@ -104,6 +105,7 @@ const AboutSec = () => {
                   height={500}
                   alt="complex"
                   src="/images/aboutSec.jpg"
+                  priority
                   style={{ objectFit: 'cover'}}
                 />
               </div>

@@ -15,6 +15,26 @@ import InnerTitle from "../InnerTitle";
 import dots from '../../../public/images/dot-corner.png'
 import GlobalBtn from "../GlobalBtn";
 
+const projectsData = [
+    {
+        id: 1,
+        img: "/images/tower.jpg",
+        name: "SUMOU TOWER",
+        desc: "A high-rise mixed-use project consists of two towers."
+    },
+    {
+        id: 2,
+        img: "/images/gate.jpg",
+        name: "SUMOU GATE",
+        desc: "The project aims to attract guests interested in visiting Madinah and Almasjid Alnabawy by providing a premium service and delivering memorable experience"
+    },
+    {
+        id: 3,
+        img: "/images/bark.jpg",
+        name: "SUMOU PARK",
+        desc: "The project land was originally used as a club for the youth that contains different play grounds for different sports"
+    },
+];
 
 const ProjectSec = ({ locale }) => {
     const options = {
@@ -36,12 +56,11 @@ const ProjectSec = ({ locale }) => {
         pagination: {
             clickable: true
         },
+        modules: [Navigation],
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            clickable: true,
         },
         loop: true,
-        modules: [Navigation]
     }
 
     return (
@@ -50,31 +69,11 @@ const ProjectSec = ({ locale }) => {
                 <InnerTitle title="Featured Projects" align="left" />
 
                 <Swiper className="newSwiper" style={{ marginBottom: '30px' }} {...options}>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <ProjectItem />
-                    </SwiperSlide>
-
-                    {/* Add Navigation */}
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
+                    {projectsData?.map((item) => 
+                        <SwiperSlide key={item.id}>
+                            <ProjectItem item={item} />
+                        </SwiperSlide>
+                    )}
                 </Swiper>
 
                 <Stack display="block" textAlign="center">

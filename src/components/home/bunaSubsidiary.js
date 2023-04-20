@@ -6,7 +6,6 @@ import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 // Component
 import { SideTitle } from "../SideTitle";
@@ -17,9 +16,9 @@ const CardBox = styled(Box)(({ theme }) => ({
   border: '1px solid #e7e5e5',
   textAlign: 'center',
   padding: '10px',
+  height: '100%',
   position: 'relative',
   boxShadow: '1px 5px 5px #eee',
-
   "&:before , &:after": {
     boxSizing: 'inherit',
     zIndex: '-1',
@@ -37,11 +36,9 @@ const CardBox = styled(Box)(({ theme }) => ({
     bottom: 0,
     right: 0
   },
-
   "&:hover": {
     animation: 'jump1 5s linear infinite',
     backgroundColor: '#fff',
-
     "&:before , &:after": {
       width: '100%',
       height: '100%',
@@ -57,7 +54,6 @@ const CardBox = styled(Box)(({ theme }) => ({
       borderLeftColor: theme.palette.secondary.main,
     },
   },
-
   "& .card-img": {
     position: 'relative',
     width: '200px',
@@ -72,42 +68,41 @@ const subsidImg = [
   {
     id: 1,
     img: "/images/align-management.png",
-    name: "Alignment Management",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    name: "Align Management",
+    desc: "Managing all aspects from conceptual design and planning"
   },
   {
     id: 2,
     img: "/images/TAAM Logo.svg",
-    name: "Taam Group",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    name: "TAAM Group",
+    desc: "Leading general contractor specializing in commercial and residential projects"
   },
   {
     id: 3,
     img: "/images/dac.png",
-    name: "Dac Group",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    name: "DAC Group",
+    desc: "Leading specialized design and build contractor using modern technology"
   },
   {
     id: 4,
-    img: "/images/BUNA-LOGO-black.png",
-    name: "Buna Group",
-    desc: "Cursus euismod dictumst a non dis nisi sociosqu mauris."
+    img: "/images/bct.png",
+    name: "BCT Contracting",
+    desc: "Specialized general contractor for high-rise buildings and mixed-use projects"
   },
 ];
 
-const BunaSubsidiary = () => {
+const BunaSubsidiary = ({locale}) => {
 
   return (
-    <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative">
+    <Box pt={10} pb={10} bgcolor="#F5F5F5" position="relative" width="100%" overflow="hidden">
       <Container>
-        
-        <InnerTitle title="BUNA SUBSIDIARIES" />
+        <InnerTitle title="BUNA SUBSIDIARIES" locale={locale} />
 
         <Grid container spacing={3} mb={1} mt={2} justifyContent="center">
           {subsidImg?.map((item) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={item.id}>
               <Link href="/">
-                <CardBox>
+                <CardBox data-aos="fade-up">
                   <div className="card-img" style={{ marginTop: '15px', marginBottom: '20px' }}>
                     <Image
                       src={item.img}
@@ -133,7 +128,7 @@ const BunaSubsidiary = () => {
           ))}
         </Grid>
       </Container>
-      <SideTitle title="Buna" />
+      <SideTitle title="Buna" locale={locale} />
     </Box>
   );
 };

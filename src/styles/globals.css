@@ -1,9 +1,8 @@
-
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline: none;
 }
 li,ul{
   list-style: none
@@ -23,7 +22,6 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: #0b594f;
 }
-
 
 /* Global Style */
 .inner-subtitle{
@@ -67,43 +65,115 @@ a {
 }
 
 /* Slider */
-.swiper-button-next, .swiper-button-prev{
-  color: #fff !important;
-}
 .swiper-pagination-bullet{
   width: 13px !important;
   height: 13px !important;
   margin: 0 3px !important;
   border-radius: 50%;
   border: 2px solid #0b594f !important;
-  background-color: unset !important;
+  background-color: #fff !important;
+  opacity: 1 !important
 }
 .swiper-pagination-bullet-active{
   background:  #0b594f !important;
 }
-
-/* New Swiper */
-.newSwiper .swiper-button-prev,
-.newSwiper .swiper-button-next{
-  /* visibility: hidden;
-  opacity: 0; */
-  color: #000 !important
+.swiper-button-next, .swiper-button-prev{
+  width: 50px !important;
+  height: 50px !important;
+  padding: 5px;
+  color: #fff !important;
+  background-color: #000 !important;
+  overflow: hidden;
+  transition: all 0.3s ease 0s
 }
-/* .newSwiper:hover .swiper-button-next{
-  right: -50px;
-  left: auto;
-  opacity: 1;
-  visibility: visible;
-} */
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 25px !important
+}
+.swiper-button-next:before,
+.swiper-button-prev:before{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  content: "";
+  z-index: -1;
+  -webkit-transform: translateY(110%);
+  -moz-transform: translateY(110%);
+  -ms-transform: translateY(110%);
+  transform: translateY(110%);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  transition-delay: 0.1s;
+  display: block;
+  position: absolute;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+  color: #000 !important;
+  box-shadow: unset;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.swiper-button-next:hover:before,
+.swiper-button-prev:hover:before{
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media screen and (min-width: 768px) {
+  /* New Swiper Navigation*/
+  [dir = 'ltr'] .newSwiper .swiper-button-next{
+  right: -50px;
+    left:auto
+  }
+  [dir='ltr'] .newSwiper .swiper-button-prev{
+    left: -50px;
+    right:auto
+  }
+  [dir = 'ltr'] .newSwiper:hover .swiper-button-next{
+    right: 0;
+  }
+  [dir = 'ltr'] .newSwiper:hover .swiper-button-prev{
+    left: 0;
+  }
+  /* Rtl Swiper Navigation */
+  [dir = 'rtl'] .newSwiper .swiper-button-prev{
+    right: -50px;
+    left: auto;
+  }
+  [dir = 'rtl'] .newSwiper .swiper-button-next{
+    left: -50px;
+    right: auto;
+  }
+  [dir = 'rtl'] .newSwiper:hover .swiper-button-prev{
+    right: 0;
+    left: auto;
+  }
+  [dir = 'rtl'] .newSwiper:hover .swiper-button-next{
+    left: 0;
+    right: auto;
+  }
+}
+@media screen and (max-width: 768px){
+  .main-slider{
+    height: 500px;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    width: 35px !important;
+    height: 35px !important
+  }
+  .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 20px !important
+  }
+  .side-title{
+    display: none;
   }
 }
 
-
-/* Animations */
+/* Start Animations */
 @keyframes jump1 {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -131,9 +201,7 @@ a {
     transform: translate3d(0, 0, 0);
   }
 }
-
-
-@-webkit-keyframes slideInLeft {
+@keyframes slideInright {
   from {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
@@ -159,3 +227,22 @@ a {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
+@keyframes cssload-fold-thecube {
+	0%, 10% {
+		transform: perspective(136px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%, 75% {
+		transform: perspective(136px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,	100% {
+		transform: perspective(136px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+.cssload-fold-thecube {
+  -webkit-animation-name: cssload-fold-thecube;
+  animation-name: cssload-fold-thecube;
+}
+/* End Animations */

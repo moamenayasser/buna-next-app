@@ -79,15 +79,15 @@ const ClientsSec = ({ locale }) => {
 
     return (
         <Box pt={5} pb={2} bgcolor="#fff" position="relative" zIndex={9} margin="0 auto 0px" sx={{
-            "&:before": {
-                position: 'absolute',
-                content: '""',
-                width: '100%',
-                height: '50%',
-                left: 0,
-                top: 0,
-                backgroundColor: '#f5f5f5',
-            },
+            // "&:before": {
+            //     position: 'absolute',
+            //     content: '""',
+            //     width: '100%',
+            //     height: '50%',
+            //     left: 0,
+            //     top: 0,
+            //     backgroundColor: '#f5f5f5',
+            // },
             "&:after": {
                 position: 'absolute',
                 content: '""',
@@ -98,7 +98,7 @@ const ClientsSec = ({ locale }) => {
                 backgroundColor: '#000',
             }
         }}>
-            <div style={{ backgroundColor: "#fff" ,width:"80%", zIndex: 99, position: 'relative', padding: '35px 0 10px', margin: 'auto' }}>
+            <div style={{ backgroundColor: "#fff" ,width:"80%", zIndex: 99, position: 'relative', padding: '35px 0 10px', margin: 'auto', border: '1px solid #eee', boxShadow: 'rgb(0 0 0 / 8%) 0px -1px 7px' }}>
                 <Swiper className="newSwiper" style={{ marginBottom: '30px' }} {...options}>
                     {clientsImg?.map((item) => (
                         <SwiperSlide key={item.id}>

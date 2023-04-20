@@ -13,12 +13,7 @@ import SocialItems from "../header/SocialItems";
 const NewsLetterSection = ({ socialIcons, locale }) => {
   return (
     <>
-      <Typography
-        component="h4"
-        variant="h6"
-        textTransform="capitalize"
-        gutterBottom
-      >
+      <Typography component="h4" variant="h6" textTransform="capitalize" gutterBottom >
         newsletter
       </Typography>
 
@@ -26,12 +21,13 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
         variant="outlined"
         fullWidth
         required
-        style={{ marginBottom: "1rem" }}
+        style={{ marginBottom: "0.5rem" }}
         color="primary"
         component="form"
+        sx={{ "& input":{padding: '15px 10px'}}}
       >
         <FilledInput
-          id="taam-news-letter"
+          id="buna-news-letter"
           placeholder="Email Address"
           endAdornment={
             <InputAdornment position="end">
@@ -42,7 +38,7 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
               >
                 <SendOutlinedIcon
                   style={{
-                    color: "#d7282b",
+                    color: "#0b594f",
                     fontSize: "1rem",
                   }}
                 />
@@ -52,12 +48,15 @@ const NewsLetterSection = ({ socialIcons, locale }) => {
           style={{
             color: "#fff",
             fontSize: "0.85rem",
-            backgroundColor: "rgb(217 197 197 / 6%)",
+            padding: '0px',
+            backgroundColor: "#ffffff21",
+            border: '1px solid #0b594f',
+            borderRadius: 0,
           }}
         />
       </FormControl>
 
-      <Typography variant="body2" mb={4}>
+      <Typography variant="body1" mb={4}>
         Subscribe to our newsletter
       </Typography>
 

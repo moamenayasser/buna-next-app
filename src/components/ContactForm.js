@@ -148,7 +148,7 @@ const ContactForm = () => {
           <TextField
             name="firstName"
             label="First Name"
-            variant="standard"
+            variant="outlined"
             required
             fullWidth
             value={formValues.firstName}
@@ -162,7 +162,7 @@ const ContactForm = () => {
           <TextField
             name="lastName"
             label="Last Name"
-            variant="standard"
+            variant="outlined"
             required
             fullWidth
             value={formValues.lastName}
@@ -176,7 +176,7 @@ const ContactForm = () => {
           <TextField
             name="email"
             label="Email"
-            variant="standard"
+            variant="outlined"
             required
             fullWidth
             InputProps={{
@@ -208,7 +208,7 @@ const ContactForm = () => {
           <TextField
             name="phone"
             label="Phone"
-            variant="standard"
+            variant="outlined"
             required
             fullWidth
             InputProps={{
@@ -225,7 +225,7 @@ const ContactForm = () => {
           <TextField
             name="message"
             label="Message"
-            variant="standard"
+            variant="outlined"
             fullWidth
             value={formValues.message}
             onChange={handleFieldChange}

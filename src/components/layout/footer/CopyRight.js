@@ -14,8 +14,9 @@ const CopyRight = () => {
           textAlign="center"
           justifyContent="center"
           gap={1}
+          fontSize="14px"
         >
-          <Typography fontSize="0.4rem">
+          <Typography style={{ fontSize: 12 }}>
             &copy; {new Date().getFullYear()}. All Rights Reserved. | Developed
             & Designed by{" "}
             <Link

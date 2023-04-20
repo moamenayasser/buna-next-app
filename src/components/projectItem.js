@@ -1,10 +1,10 @@
 // Internal Imports
 import Image from "next/image";
+import Link from "next/link";
 // MUI
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { styled } from "@mui/material";
-import Link from "next/link";
 
 
 const PorjectCard = styled(Box)(({ theme }) => ({
@@ -14,7 +14,6 @@ const PorjectCard = styled(Box)(({ theme }) => ({
     "& .project-media": {
         height: '400px',
         position: 'relative',
-
         "& img": {
             transition: 'all .5s',
             filter: 'brightness(100%)',
@@ -31,7 +30,6 @@ const PorjectCard = styled(Box)(({ theme }) => ({
         transition: '.2s cubic-bezier(.3, .58, .55, 1)',
         bottom: '-90px',
         position: 'relative',
-
         "& .project-title": {
             "&:hover": {
                 color: theme.palette.secondary.main
@@ -52,9 +50,8 @@ const PorjectCard = styled(Box)(({ theme }) => ({
             marginBottom: '-1px',
             borderBottom: '1px solid #0000004a',
             color: '#000',
-            fontSize: '16px',
-            fontWeight: 600,
-
+            fontSize: '15px',
+            fontWeight: 400,
             "&:before": {
                 content: '""',
                 position: 'absolute',
@@ -65,7 +62,6 @@ const PorjectCard = styled(Box)(({ theme }) => ({
                 backgroundColor: theme.palette.secondary.main,
                 transition: 'all ease 0.4s',
             },
-
             "&:hover": {
                 color: theme.palette.secondary.main,
                 "&:before": {
@@ -86,18 +82,18 @@ const PorjectCard = styled(Box)(({ theme }) => ({
     },
 }))
 
-const ProjectItem = () => {
+const ProjectItem = ({item}) => {
     return (
         <PorjectCard>
             <div className="project-media" style={{ position: 'relative', overflow: 'hidden' }}>
-                <Image src="/images/news1.jpg" alt="Projects" width={300} height={300} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <Image src={item.img} alt="Projects" width={400} height={400} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div className="project-content">
                 <Link href="/">
-                    <Typography component="h5" variant="h4" className="project-title">Factory renovation architecture works</Typography>
+                    <Typography component="h5" variant="h4" className="project-title">{item.name}</Typography>
                 </Link>
                 <div className="divider"></div>
-                {/* <Typography component="p" variant="p" truncate={2}>Company kaya nisl ullamcorper the duru metu enna lophare mavna busnini viventa the ornare ipsuma. Curabitur magna pentesue the miss tenis vitae.</Typography> */}
+                <Typography component="p" variant="body1" truncate={2} mb={1}>{item.desc}</Typography>
                 <Link href="/" className="link-btn">
                     Read More
                 </Link>

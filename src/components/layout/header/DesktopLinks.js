@@ -24,7 +24,6 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
     fontSize: "1.1rem",
     fontWeight: 500,
     transition: "all 0.2s linear",
-
     "&:focus": {
       backgroundColor: "unset",
     },
@@ -52,7 +51,6 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       },
     },
   },
-
   "& .link": {
     fontSize: "1.1rem",
     textTransform: "capitalize",
@@ -65,7 +63,6 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-
     "&:after": {
       zIndex: -1,
       position: 'absolute',
@@ -77,7 +74,6 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       backgroundColor: theme.palette.secondary.main,
       transition: 'all 0.5s ease-out',
     },
-
     "&:hover": {
       backgroundColor: "unset",
       "&:after": {
@@ -106,7 +102,6 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
       width: "100%",
       textTransform: "capitalize",
       fontSize: "0.9rem",
-
       "&:hover": {
         backgroundColor: theme.palette.secondary.main,
         color: "#fff",
@@ -123,7 +118,6 @@ const LinksWrapperStyle = styled("li")(({ theme }) => ({
 }));
 
 const DesktopLinks = ({ headerLinks, locale }) => {
- 
   return (
     <Stack
       direction="row"

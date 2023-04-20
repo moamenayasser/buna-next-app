@@ -22,14 +22,11 @@ const CrossedSec = styled(Box)(({ theme }) => ({
                 transform: 'scale(1.2)'
             }
         },
-        [theme.breakpoints.down('md')]: {
-            width: '100%',
-        },
     },
     "& .caption": {
         left: 'auto',
         right: 0,
-        background: '#fff',
+        background: '#000',
         padding: '5% 4% 5% 4%',
         position: 'absolute',
         border: '1px solid rgba(0,0,0,0.2)',
@@ -42,6 +39,15 @@ const CrossedSec = styled(Box)(({ theme }) => ({
             position: 'relative',
         }
     },
+    [theme.breakpoints.down('md')]: {
+        "& figure": {
+            width: '100%',
+            height: '350px'
+        },
+        "& .caption":{
+            transform: 'unset'
+        }
+    },
 }));
 
 const CertificateSec = () => {
@@ -52,11 +58,11 @@ const CertificateSec = () => {
                     <figure>
                         <Image src={banner.src} alt="Certificate" fill style={{ objectFit: 'cover', transition: 'all 0.5s', }} />
                     </figure>
-                    <div className="caption">
-                        <InnerTitle title="Certificate" color="#000" />
+                    <div className="caption" >
+                        <InnerTitle title="CERTIFICATES" color="#fff" />
 
-                        <Typography variant="body1" component="p" pb={6} color="#000">
-                            TAAM’s vision is brought to fruition by overcoming challenges and achieving incredible milestones. These certifications speak for our ethics, integrity, and dedication in the work we do.
+                        <Typography variant="body1" component="p" pb={6} color="#fff">
+                        BUNA’s vision is realized by overcoming great challenges and achieving greater milestones. These certifications are a testament to our quality of work and our team’s dedication to deliver excellence.
                         </Typography>
                         <GlobalBtn title="All Certificates" href="/" variant="outlined" />
                     </div>

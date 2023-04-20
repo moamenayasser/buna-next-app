@@ -42,16 +42,16 @@ const LogoSection = () => {
         textTransform="capitalize"
         gutterBottom
       >
-        Company Structure
+        SUMOU holding
       </Typography>
       <Typography variant="body2" mb={3} width="90%">
-        A pioneer with a unique vision in contracting and construction management.
+      A world-class institutional investor catalyzing growth in global business sectors.
       </Typography>
       <Stack display="inline">
           <Link href="/">
             <Image
-              src="/images/BUNA-LOGO-white.png"
-              alt="Buna Logo"
+              src="/images/clients/sumou-w.jpg"
+              alt="Sumou Logo"
               width={100}
               height={60}
               style={{ maxWidth: "100%", objectFit:'contain', margin: '5px' }}
