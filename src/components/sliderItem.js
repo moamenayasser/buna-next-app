@@ -1,7 +1,7 @@
 // Internal Imports
 import Image from "next/image";
 import Link from "next/link";
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 // MUI
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -53,7 +53,7 @@ const BoxStyle = styled(Box)(({ theme }) => ({
 
 const SliderItem = ({ item }) => {
   const router = useRouter();
-  const {locale} = router;
+  const { locale } = router;
 
   return (
     <>
@@ -69,10 +69,12 @@ const SliderItem = ({ item }) => {
         <BoxStyle width="100%" height="100%" display="flex" alignItems="center">
           <div className="content">
             <Typography component="h1" variant="h3" mb={1}>
-              <span style={{ fontSize: '40px' }}>BUNA</span> <br /> Construction Into A New Frontier
+              <span style={{ fontSize: '40px' }}>BUNA</span> <br /> The Ultimate Construction Management Partner
             </Typography>
             <Typography component="p" variant="body1" className="description" fontWeight={600}>
-              {item[`desc_${locale}`]}
+              {/* {item[`desc_${locale}`]} */}
+              A Leading General Contractor and Construction Management Services
+              Organization in Saudi Arabia and a subsidiary of SUMOU Holding.
             </Typography>
             <Stack display="flex" justifyContent="flex-start" flexDirection="row" mt={3}>
               <Button component={Link} href="/" variant="contained">
