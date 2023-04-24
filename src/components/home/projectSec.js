@@ -19,7 +19,7 @@ const projectsData = [
     {
         id: 1,
         img: "/images/tower.jpg",
-        name: "SUMOU TOWER",
+        name: "SUMOU TOWERS",
         desc: "A high-rise mixed-use project consists of two towers."
     },
     {

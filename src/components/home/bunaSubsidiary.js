@@ -80,7 +80,7 @@ const subsidImg = [
   {
     id: 3,
     img: "/images/TAAM Logo.svg",
-    name: "TAAM Group",
+    name: "TAAM",
     desc: "Leading general contractor specializing in commercial and residential projects"
   },
   {
