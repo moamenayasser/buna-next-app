@@ -33,7 +33,7 @@ const bannerData = [
   },
   {
     "id": 3,
-    "url": "/images/03.jpg",
+    "url": "/images/06.jpg",
     "desc_ar": "مقاول عام رائد ومنظمة خدمات إدارة البناء ،وإحدى شركات سمو القابضة",
     "desc_en": "A leading general contractor and a subsidiary of Sumou Holding",
     "title_ar": "بوناالبناء في جبهة جديدة",
