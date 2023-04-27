@@ -13,7 +13,7 @@ const ImageContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
   "& .thumbnail1": {
     position: 'relative',
-    maxWidth: 'max-content', 
+    maxWidth: 'max-content',
     zIndex: 1,
 
     "&:after": {
@@ -70,10 +70,15 @@ const AboutSec = () => {
       <Container>
         <Grid container spacing={3} display='flex'>
           <Grid item xs={12} md={6}>
-            <InnerTitle title="Why Buna?" align="left" />
+            <InnerTitle title="WHO WE ARE ?" align="left" />
             <p>
-            Specializing in mixed use and high-rise buildings, BUNA’s visionary team of highly professional engineers and experts provide long-term, cost-effective and efficient solutions to clients, meeting all safety and quality requirements. Equipped with top quality modern technology, led by the highest of calibers in the market.
+              BUNA is a Leading General Contractor & Construction Management Services
+              Organization in Saudi Arabia & a subsidiary of SUMOU Holding.
+
             </p>
+            {/* <p>
+            Specializing in mixed use and high-rise buildings, BUNA’s visionary team of highly professional engineers and experts provide long-term, cost-effective and efficient solutions to clients, meeting all safety and quality requirements. Equipped with top quality modern technology, led by the highest of calibers in the market.
+            </p> */}
             <h4 className="inner-subtitle">
               BUNA Subsidiaries are:
             </h4>
@@ -85,13 +90,19 @@ const AboutSec = () => {
                 <span>BCT Contracting</span>
               </li>
               <li>
-                <span>TAAM Group</span>
+                <span>TAAM </span>
               </li>
               <li>
                 <span>DAC Group</span>
               </li>
             </ul>
+            <InnerTitle title="WHY BUNA ?" align="left" />
+            <p>
+              UNA is offering wide range of technical services leaded by a group of highly
+              qualified team, whose expertise in engineering projects covering all major
+              disciplines of construction management.
 
+            </p><br></br>
             <Button component={Link} href="/" variant="contained">
               Read More
             </Button>
@@ -106,7 +117,7 @@ const AboutSec = () => {
                   alt="complex"
                   src="/images/aboutSec.jpg"
                   priority
-                  style={{ objectFit: 'cover'}}
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
 
@@ -116,7 +127,7 @@ const AboutSec = () => {
                   height={500}
                   alt="complex"
                   src="/images/01.jpg"
-                  style={{ objectFit: 'cover'}}
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
             </ImageContainer>
