@@ -18,7 +18,7 @@ const InnerTitle = ({ title , color , locale }) => {
                 left: 0
             }
         }}>
-            <Typography component="h1" variant="h2" pt={1} pb={3} color={color}>{title} </Typography>
+            <Typography component="h1" variant="h2" pt={1} pb={0} color={color}>{title} </Typography>
         </Stack>
     )
 }
