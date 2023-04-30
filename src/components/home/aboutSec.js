@@ -96,7 +96,7 @@ const AboutSec = () => {
                 <span>DAC Group</span>
               </li>
             </ul>
-//             <InnerTitle title="WHY BUNA ?" align="left" />
+{/*          <InnerTitle title="WHY BUNA ?" align="left" />*/}
             <p>
               BUNA is offering wide range of technical services leaded by a group of highly
               qualified team, whose expertise in engineering projects covering all major
