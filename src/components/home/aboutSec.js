@@ -96,15 +96,15 @@ const AboutSec = () => {
                 <span>DAC Group</span>
               </li>
             </ul>
-            <InnerTitle title="WHY BUNA ?" align="left" />
+//             <InnerTitle title="WHY BUNA ?" align="left" />
             <p>
-              UNA is offering wide range of technical services leaded by a group of highly
+              BUNA is offering wide range of technical services leaded by a group of highly
               qualified team, whose expertise in engineering projects covering all major
               disciplines of construction management.
 
             </p><br></br>
             <Button component={Link} href="/" variant="contained">
-              Read More
+              Learn More
             </Button>
           </Grid>
 
