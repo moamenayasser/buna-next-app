@@ -69,25 +69,25 @@ const subsidImg = [
     id: 1,
     img: "/images/align-management.png",
     name: "Align Management",
-    desc: "Managing all aspects from conceptual design and planning"
+    desc: "Managing all aspects from conceptual design and planning."
   },
   {
     id: 2,
     img: "/images/bct.png",
     name: "BCT Contracting",
-    desc: "Specialized general contractor for high-rise buildings and mixed-use projects"
+    desc: "Specialized general contractor for high-rise buildings and mixed-use projects."
   },
   {
     id: 3,
     img: "/images/TAAM Logo.svg",
     name: "TAAM",
-    desc: "Leading general contractor specializing in commercial and residential projects"
+    desc: "A leading General Contractor specialized in Industrial , commercial and residentials projects."
   },
   {
     id: 4,
     img: "/images/dac.png",
     name: "DAC Group",
-    desc: "Leading specialized design and build contractor using modern technology"
+    desc: "Advanced Design and Build Contractor thru several Specialized divisions."
   },
 ];
 
