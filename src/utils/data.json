@@ -58,8 +58,8 @@
       "dropdownLinks": [
         {
           "id": 1,
-          "label_en": "SUMOU TOWER",
-          "label_ar": "SUMOU TOWER",
+          "label_en": "SUMOU TOWERS",
+          "label_ar": "SUMOU TOWERS",
           "href": "/",
           "hasDropdown": false,
           "dropdownLinks": []
