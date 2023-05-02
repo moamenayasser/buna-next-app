@@ -69,13 +69,13 @@ const subsidImg = [
     id: 1,
     img: "/images/align-management.png",
     name: "Align Management",
-    desc: "Managing all aspects from conceptual design and planning."
+    desc: "BUNA Construction Management Services Arm."
   },
   {
     id: 2,
     img: "/images/bct.png",
     name: "BCT Contracting",
-    desc: "Specialized general contractor for high-rise buildings and mixed-use projects."
+    desc: "General Contractor Specialized in mixed-use , high-rise buildings."
   },
   {
     id: 3,
