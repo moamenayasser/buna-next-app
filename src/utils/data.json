@@ -33,8 +33,8 @@
         },
         {
           "id": 3,
-          "label_en": "TAAM Group",
-          "label_ar": "TAAM Group",
+          "label_en": "TAAM",
+          "label_ar": "TAAM",
           "href": "/",
           "hasDropdown": false,
           "dropdownLinks": []
@@ -168,8 +168,8 @@
         },
         {
           "id": 3,
-          "title_en": "TAAM Group",
-          "title_ar": "TAAM Group",
+          "title_en": "TAAM",
+          "title_ar": "TAAM",
           "href": "/"
         },
         {
